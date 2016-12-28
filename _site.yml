@@ -4,9 +4,6 @@ navbar:
   title: "Nathaniel D. Phillips, PhD"                               
   type: inverse
   left:
-    - text: "Home"
-      icon: fa-home
-      href: index.html
     - text: "About"
       icon: fa-user 
       href: about.html
@@ -21,6 +18,9 @@ navbar:
         - text: "---------"
         - text: "FFTrees"
           href: FFTrees.html
+    - text: "YaRrr!"
+      icon: fa-book 
+      href: piratesguide.html
     - text: "Blog"
       icon: fa-rss
       href: https://ndphillips.github.io/blog/   

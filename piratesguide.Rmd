@@ -1,0 +1,23 @@
+---
+title: "YaRrr! The Pirate's Guide to R"
+bibliography: homepage.bib
+---
+
+```{r, out.width = "400px", echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/YaRrr_Cover.jpg")
+```
+
+*YaRrr! The Pirate's Guide to R*, is an introductory e-book to the R programming language. You can download it here: <a href="https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view?usp=sharing">Click Here to Download YaRrr! The Pirate's Guide to R</a>
+
+This whole story started in the summer of 2015. I was taking a late night swim on the Bodensee in Konstanz and saw a rusty object sticking out of the water. Upon digging it out, I realised it was an ancient usb-stick with the word YaRrr inscribed on the side. Intrigued, I brought it home and plugged it into my laptop. Inside the stick, I found a single pdf file written entirely in pirate. After watching several pirate movies (ok, maybe just the Goonies 10,000 times), I learned enough pirate to begin translating the text to English. Sure enough, the book turned out to be an introduction to R called The Pirate’s Guide to R.
+
+This book clearly has both massive historical and pedagogical significance. Most importantly, it turns out that pirates were programming in R well before the earliest known advent of computers. Of slightly less significance is that the book has turned out to be a surprisingly up-to-date and approachable introductory text to R. For both of these reasons, I felt it was my duty to share the book with the world.
+
+You can access the latest version of the e-book by clicking the link above.
+
+## Support me with a donation!
+
+I am a huge proponent of open source software (like R) and open science. So a version of this book will always be freely available! That said translating and updating the book takes quite a bit of time. So if you like the book, and want to see it get even better with more pirate-speak and terrible jokes, consider throwing some gold my way by clicking the donation button below!
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="NWE3NP9LHDQ6J" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-34px.png" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+

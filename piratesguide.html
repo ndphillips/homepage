@@ -11,7 +11,7 @@
 
 
 
-<title>yarrr</title>
+<title>YaRrr! The Pirate’s Guide to R</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -254,23 +254,23 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">yarrr</h1>
+<h1 class="title toc-ignore">YaRrr! The Pirate’s Guide to R</h1>
 
 </div>
 
 
-<p>The <code>yarrr</code> package contains a mixture of functions and datasets that support my e-book <a href="http://www.thepiratesguidetor.com">YaRrr! The pirate’s guide to R</a>. The most notable function in the package is <code>pirateplot()</code>. A pirateplot shows the relationship between a categorical independent variable and a numeric dependent variable. However, in contrast to notoriously deceptive barplots, a pirateplot reveals patterns in data by showing Raw data (as points), Descriptive statistics (as lines and/or bars), and Inferential statistics (as bands).</p>
-<p><img src="yarrr_files/figure-html/unnamed-chunk-1-1.png" width="576" style="display: block; margin: auto;" /></p>
-<p>You can install the most stable version of <code>yarrr</code> from CRAN, or the latest developer version from GitHub as follows:</p>
-<pre class="r"><code>install.packages(&quot;yarrr&quot;)
-# devtools::install_github(&quot;ndphillips/yarrr&quot;, build_vignettes = TRUE) # developer version</code></pre>
-<p>Here is an example of a pirateplot showing the relationship between the age and weight of chickens:</p>
-<pre class="r"><code># Create a pirateplot from the ChickWeight data
-yarrr::pirateplot(formula = weight ~ Time,
-                  data = ChickWeight,
-                  main = &quot;A Pirateplot of chicken weights by time&quot;)</code></pre>
-<p><img src="yarrr_files/figure-html/unnamed-chunk-3-1.png" width="768" style="display: block; margin: auto;" /></p>
-<p>The <code>pirateplot()</code> function contains many arguments that allow you to easily customise the look of the plot, from the colors, to the element transparencies. To learn more, look at the <code>pirateplot()</code> vignette <a href="https://cran.r-project.org/web/packages/yarrr/vignettes/pirateplot.html">on CRAN</a>.</p>
+<p><img src="media/YaRrr_Cover.jpg" width="400px" style="display: block; margin: auto;" /></p>
+<p><em>YaRrr! The Pirate’s Guide to R</em>, is an introductory e-book to the R programming language. You can download it here: <a href="https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view?usp=sharing">Click Here to Download YaRrr! The Pirate’s Guide to R</a></p>
+<p>This whole story started in the summer of 2015. I was taking a late night swim on the Bodensee in Konstanz and saw a rusty object sticking out of the water. Upon digging it out, I realised it was an ancient usb-stick with the word YaRrr inscribed on the side. Intrigued, I brought it home and plugged it into my laptop. Inside the stick, I found a single pdf file written entirely in pirate. After watching several pirate movies (ok, maybe just the Goonies 10,000 times), I learned enough pirate to begin translating the text to English. Sure enough, the book turned out to be an introduction to R called The Pirate’s Guide to R.</p>
+<p>This book clearly has both massive historical and pedagogical significance. Most importantly, it turns out that pirates were programming in R well before the earliest known advent of computers. Of slightly less significance is that the book has turned out to be a surprisingly up-to-date and approachable introductory text to R. For both of these reasons, I felt it was my duty to share the book with the world.</p>
+<p>You can access the latest version of the e-book by clicking the link above.</p>
+<div id="support-me-with-a-donation" class="section level2">
+<h2>Support me with a donation!</h2>
+<p>I am a huge proponent of open source software (like R) and open science. So a version of this book will always be freely available! That said translating and updating the book takes quite a bit of time. So if you like the book, and want to see it get even better with more pirate-speak and terrible jokes, consider throwing some gold my way by clicking the donation button below!</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="NWE3NP9LHDQ6J" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-34px.png" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
+</form>
+</div>
 
 
 
