@@ -241,7 +241,40 @@ $(document).ready(function () {
 </div>
 
 
-<p>Here is a list of my R packages..</p>
+<p>Here is a list of my R packages available either on CRAN or GitHub:</p>
+<div id="yarrr" class="section level2">
+<h2>yarrr</h2>
+<p>The <code>yarrr</code> package contains a mixture of functions and datasets that support my e-book YaRrr! The pirate’s guide to R. The most notable function in the package is <code>pirateplot()</code>, a modification of the fantastic beanplot from the <code>beanplot</code> package that shows the relationship between a categorical independent variable and a numeric dependent variable. The plot replaces outdated barplots by showing Raw data, Descriptive statistics, and Inferential statistics.</p>
+<p><img src="packages_files/figure-html/unnamed-chunk-1-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>You can install the most stable version of <code>yarrr</code> from CRAN, or the latest developer version from GitHub as follows:</p>
+<pre class="r"><code>install.packages(&quot;yarrr&quot;)
+# devtools::install_github(&quot;ndphillips/yarrr&quot;, build_vignettes = TRUE) # developer version</code></pre>
+<p>Here is an example of a pirateplot showing the relationship between the age and weight of chickens:</p>
+<pre class="r"><code># Create a pirateplot from the ChickWeight data
+yarrr::pirateplot(formula = weight ~ Time,
+                  data = ChickWeight,
+                  main = &quot;A Pirateplot of chicken weights by time&quot;)</code></pre>
+<p><img src="packages_files/figure-html/unnamed-chunk-3-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p>As you can see, the plot includes all the raw data, 95% Bayesian Highest Density Intervals (HDIs), smoothed densities, and bright colors by default. The <code>pirateplot()</code> function contains many arguments that allow you to customise the look of the plot.</p>
+</div>
+<div id="fftrees" class="section level2">
+<h2>FFTrees</h2>
+<p>The <code>FFTrees</code> package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are decision algorithms</p>
+<pre class="r"><code>install.packages(&quot;FFTrees&quot;)
+# devtools::install_github(&quot;ndphillips/FFTrees&quot;, build_vignettes = TRUE) # developer version</code></pre>
+<pre class="r"><code>library(FFTrees)
+
+set.seed(100) # For cross validation replication
+heart.fft &lt;- FFTrees(formula = diagnosis ~.,        # formula
+                     data = heartdisease,           # dataframe
+                     train.p = .5)                  # cross validation split
+
+plot(heart.fft,                                     # FFTrees object
+     main = &quot;Heart Disease&quot;,                        # Plot title
+     decision.names = c(&quot;Healthy&quot;, &quot;Diseased&quot;),     # Decision names
+     data = &quot;test&quot;)                                 # Show statistics for test data</code></pre>
+<p><img src="packages_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+</div>
 
 
 
