@@ -4,4 +4,4 @@ title: "About me"
 
 ## Header
 
-Say more about you here.
+I am a cognitive decision scientist working at the University of Basel
