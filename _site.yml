@@ -1,7 +1,7 @@
-name: "Nathaniel Phillips"                                  # CHANGE HERE 
+name: "Nathaniel D. Phillips" 
 output_dir: "."
 navbar:
-  title: "Nathaniel Phillips PhD."                               
+  title: "Nathaniel D. Phillips PhD."                               
   type: inverse
   left:
     - text: "Home"
@@ -15,7 +15,12 @@ navbar:
       href: cv.html
     - text: "R Packages"
       icon: fa-dropbox
-      href: packages.html
+      menu:
+        - text: "yarrr"
+          href: yarrr.html
+        - text: "---------"
+        - text: "FFTrees"
+          href: FFTrees.html
     - text: "Blog"
       icon: fa-rss
       href: https://ndphillips.github.io/blog/   
