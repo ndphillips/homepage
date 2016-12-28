@@ -2,6 +2,14 @@
 title: "CV and Resume"
 ---
 
+
+
+```{r, out.width = "900px", echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/swissmountains (1 of 1).jpg")
+```
+
+
+
 ## Resume
 
 You can download my resume here: <a href="resume.pdf#" class="download" title="Download resume as PDF">Download Resume</a>			

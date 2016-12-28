@@ -1,18 +1,35 @@
 ---
 title: "About me"
+bibliography: homepage.bib
 ---
 
-```{r, out.width = "300px", echo = FALSE}
-knitr::include_graphics("media/phillips_portrait_red.jpg")
+```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
+# knitr::include_graphics("media/phillips_portrait_red.jpg")
+knitr::include_graphics("media/brooklyn (1 of 1)-3.jpg")
+
 ```
 
 
-My name is Nathaniel Phillips and I am a cognitive scientist interested in decisions under uncertainty, with a focus on information search, impression formation, and decision making. I am passionate about R, open science, reproducible research, and Bayesian statistical methods.  Feel free to check out some of my other relevant pages: [Research Gate](https://www.researchgate.net/profile/Nathaniel_Phillips2), [Google Scholar](http://scholar.google.com/citations?user=S-OOdSIAAAAJ)
+#### Education
 
 My educational background is in mathematical statistics and experimental psychology with an emphasis on cognition and decision-making. I obtained a B.A. in Mathematics from [Grinnell College](http://www.grinnell.edu), an M.S. in Experimental Psychology from [Ohio University](http://www.ohio.edu), and a PhD in Experimental Psychology from the [University of Basel](http://www.unibas.ch).
 
-I am a currently post-doctoral researcher in the department of Economic Psychology at the University of Basel, where I teach courses and conduct research in R and decision making. You can find some of my course syllabi [here](http://www.rpubs.com/YaRrr/syllabus_Winter2016)
+#### Philosophy
 
-I am available for invited talks and workshops on decision making, statistics, and R piratery.
+I am a cognitive scientist interested in decisions under uncertainty, with a focus on information search, impression formation, and decision making. I am passionate about R, open science, reproducible research, and Bayesian statistical methods. For more information about my beliefs in open science, view one of my blog posts **coming...**
 
-For academic correspondence, please contact me at nathaniel.phillips [at] unibas.ch. For R piratery, please write me at yarrr.book [at] gmail.com. Please don’t contact me at bobby.mcdonny [at] gmail.com because I have no idea who owns that email address.
+#### Publications
+
+I have published research on unconscious decision making and decision making under competition. For more information about my past, and future publications, view my Publications page **coming...**
+
+#### Presentations 
+
+I have given several talks and workshops on decision making and R at international societies such as the [Society for Judgment and Decision Making](www.sjdm.org) and the [Society for Mathematical Psychology](www.mathpsych.org), the [Max Planck Institute for Human Development](https://www.mpib-berlin.mpg.de/en) and I am available for future talks or workshops by <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">request</a>.
+
+#### Teaching
+
+I have tought courses and supervised theses in judgment and decision making, research design, statistics, and R programming at universities such as the [University of Basel](www.unibas.ch) and [University of Konstanz](https://www.uni-konstanz.de/en/). You can find an example of my course syllabi [here](http://www.rpubs.com/YaRrr/syllabus_Winter2016)
+
+#### Links
+
+Feel free to check out some of my other relevant pages: [Research Gate](https://www.researchgate.net/profile/Nathaniel_Phillips2), [Google Scholar](http://scholar.google.com/citations?user=S-OOdSIAAAAJ)
