@@ -2,7 +2,7 @@
 title: "About me"
 ---
 
-```{r, out.width = "400px", echo = FALSE}
+```{r, out.width = "300px", echo = FALSE}
 knitr::include_graphics("media/phillips_portrait_red.jpg")
 ```
 
