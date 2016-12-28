@@ -1,12 +1,13 @@
 ---
 title: "R Packages"
+bibliography: homepage.bib
 ---
 
 Here is a list of my R packages available either on CRAN or GitHub:
 
-## yarrr
+# yarrr
 
-The `yarrr` package contains a mixture of functions and datasets that support my e-book YaRrr! The pirate's guide to R. The most notable function in the package is `pirateplot()`, a modification of the fantastic beanplot from the `beanplot` package that shows the relationship between a categorical independent variable and a numeric dependent variable. The plot replaces outdated barplots by showing Raw data, Descriptive statistics, and Inferential statistics.
+The `yarrr` package contains a mixture of functions and datasets that support my e-book [YaRrr! The pirate's guide to R](http://www.thepiratesguidetor.com). The most notable function in the package is `pirateplot()`. A pirateplot shows the relationship between a categorical independent variable and a numeric dependent variable. However, in contrast to notoriously deceptive barplots, a pirateplot reveals patterns in data by showing Raw data (as points), Descriptive statistics (as lines and/or bars), and Inferential statistics (as bands).
 
 
 
@@ -62,11 +63,13 @@ yarrr::pirateplot(formula = weight ~ Time,
                   main = "A Pirateplot of chicken weights by time")
 ```
 
-As you can see, the plot includes all the raw data, 95% Bayesian Highest Density Intervals (HDIs), smoothed densities, and bright colors by default. The `pirateplot()` function contains many arguments that allow you to customise the look of the plot. 
+The `pirateplot()` function contains many arguments that allow you to easily customise the look of the plot, from the colors, to the element transparencies. To learn more, look at the `pirateplot()` vignette [on CRAN](https://cran.r-project.org/web/packages/yarrr/vignettes/pirateplot.html).
 
-## FFTrees
+# FFTrees
 
-The `FFTrees` package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are decision algorithms 
+The `FFTrees` package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are very simple [heuristics](https://en.wikipedia.org/wiki/Heuristic) decision algorithms that, in contrast to regression and more complex algorithms such as [random forests](https://en.wikipedia.org/wiki/Random_forest) and (non-frugal) [decision trees](https://en.wikipedia.org/wiki/Decision_tree), allow people to make fast decisions based on minimal information. FFTs are not just easy to use, they can also predict data as well, if not better, than more complex algorithms such as regression [@gigerenzer1999simple;@martignon2008categorization]. Because they are so effective and easy to use and, fast and frugal trees have been used to improve decision making in medical [@green1997alters; @jenny2013simple] and financial [@neth2014homo] contexts.
+
+The purpose of `FFTrees` is to allow anyone to quickly and easily generate, visualise, and use FFTs for their own data.
 
 ```{r eval = FALSE}
 install.packages("FFTrees")
@@ -89,4 +92,4 @@ plot(heart.fft,                                     # FFTrees object
      data = "test")                                 # Show statistics for test data
 ```
 
-
+# References
