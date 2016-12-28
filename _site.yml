@@ -25,7 +25,10 @@ navbar:
       href: mailto:Nathaniel.D.Phillips.is@gmail.com                      
     - text: "GitHub"
       icon: fa-github
-      href: https://github.com/ndphillips        
+      href: https://github.com/ndphillips
+    - text: "LinkedIn"
+      icon: fa-linkedin
+      href: https://www.linkedin.com/in/nathanieldphillips   
 output:
   html_document:
     theme: cosmo
