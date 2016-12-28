@@ -13,6 +13,9 @@ navbar:
     - text: "CV"
       icon: fa-file-pdf-o
       href: cv.html
+    - text: "R Packages"
+      icon: fa-dropbox
+      href: packages.html
     - text: "Blog"
       icon: fa-rss
       href: https://ndphillips.github.io/blog/   
