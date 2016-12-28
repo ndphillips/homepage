@@ -2,6 +2,17 @@
 title: "About me"
 ---
 
-## Header
+```{r, out.width = "400px", echo = FALSE}
+knitr::include_graphics("media/phillips_portrait_red.jpg")
+```
 
-I am a cognitive decision scientist working at the University of Basel
+
+My name is Nathaniel Phillips and I am a cognitive scientist interested in decisions under uncertainty, with a focus on information search, impression formation, and decision making. I am passionate about R, open science, reproducible research, and Bayesian statistical methods.  Feel free to check out some of my other relevant pages: [Research Gate](https://www.researchgate.net/profile/Nathaniel_Phillips2), [Google Scholar](http://scholar.google.com/citations?user=S-OOdSIAAAAJ)
+
+My educational background is in mathematical statistics and experimental psychology with an emphasis on cognition and decision-making. I obtained a B.A. in Mathematics from [Grinnell College](http://www.grinnell.edu), an M.S. in Experimental Psychology from [Ohio University](http://www.ohio.edu), and a PhD in Experimental Psychology from the [University of Basel](http://www.unibas.ch).
+
+I am a currently post-doctoral researcher in the department of Economic Psychology at the University of Basel, where I teach courses and conduct research in R and decision making. You can find some of my course syllabi [here](http://www.rpubs.com/YaRrr/syllabus_Winter2016)
+
+I am available for invited talks and workshops on decision making, statistics, and R piratery.
+
+For academic correspondence, please contact me at nathaniel.phillips [at] unibas.ch. For R piratery, please write me at yarrr.book [at] gmail.com. Please don’t contact me at bobby.mcdonny [at] gmail.com because I have no idea who owns that email address.

@@ -1,9 +1,15 @@
 ---
-title: "CV"
+title: "CV and Resume"
 ---
 
-<a href="CV.pdf#" class="download" title="Download CV as PDF">Download CV</a>			
+## Resume
 
-## Header
+You can download my resume here: <a href="resume.pdf#" class="download" title="Download resume as PDF">Download Resume</a>			
 
-Say more about your CV here.
+## CV
+
+You can download my CV here:
+
+## Visual Resume
+
+You can download my visual resume here:
