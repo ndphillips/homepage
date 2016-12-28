@@ -2,22 +2,21 @@
 title: "CV and Resume"
 ---
 
-
-
 ```{r, out.width = "900px", echo = FALSE, fig.align='center'}
 knitr::include_graphics("media/swissmountains (1 of 1).jpg")
 ```
 
+You can download my resume and CV with the following links:
 
-
-## Resume
-
-You can download my resume here: <a href="resume.pdf#" class="download" title="Download resume as PDF">Download Resume</a>			
-
-## CV
-
-You can download my CV here:
+- <a href="resume.pdf#" class="download" title="Download resume as PDF">Download Resume as PDF</a>
+- CV **coming soon..**
 
 ## Visual Resume
 
-You can download my visual resume here:
+Here is my visual resume, built entirely from scratch in R!
+
+```{r, out.width = "900px", echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/PhillipsInfographicResume.jpg")
+```
+
+You can create your own visual resume using the [visual resume Shiny app](https://ndphillips.shinyapps.io/Visual_Resume/). I plan to release the code as an R package shortly.
