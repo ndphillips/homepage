@@ -36,7 +36,10 @@ navbar:
       href: https://github.com/ndphillips
     - text: ""
       icon: fa-linkedin
-      href: https://www.linkedin.com/in/nathanieldphillips   
+      href: https://www.linkedin.com/in/nathanieldphillips
+    - text: ""
+      icon: fa-twitter
+      href: https://www.twitter.com/YaRrrBook
 output:
   html_document:
     theme: cosmo
