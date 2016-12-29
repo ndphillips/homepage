@@ -3,9 +3,12 @@ title: "YaRrr! The Pirate's Guide to R"
 bibliography: homepage.bib
 ---
 
-```{r, out.width = "300px", echo = FALSE, fig.align='center'}
+```{r, out.width = "300px", echo = FALSE, fig.align='center', eval = FALSE}
 knitr::include_graphics("media/YaRrr_Cover.jpg")
 ```
+
+<p style="text-align: center;"><a href="https://ndphillips.github.io/media/YaRrr_Book.pdf"><img src="http://ndphillips.github.io/media/YaRrr_Cover.jpg" alt="YaRrr Cover 2.001" width="300" /></a></p>
+
 
 *YaRrr! The Pirate's Guide to R*, is an introductory e-book to the R programming language. You can download it here: <a href="https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view?usp=sharing">Click Here to Download YaRrr! The Pirate's Guide to R</a>
 
