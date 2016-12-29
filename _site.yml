@@ -13,6 +13,9 @@ navbar:
     - text: "R Packages"
       icon: fa-dropbox
       menu:
+        - text: "Overview"
+          href: packages.html
+        - text: "---------"
         - text: "yarrr"
           href: yarrr.html
         - text: "---------"
