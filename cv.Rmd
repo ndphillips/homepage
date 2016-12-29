@@ -2,9 +2,15 @@
 title: "CV / Resume"
 ---
 
+
+Here is my visual resume, built entirely from scratch in R!
+
 ```{r, out.width = "900px", echo = FALSE, fig.align='center'}
-knitr::include_graphics("media/swissmountains (1 of 1).jpg")
+knitr::include_graphics("media/PhillipsInfographicResume.jpg")
 ```
+
+You can create your own visual resume using the [visual resume Shiny app](https://ndphillips.shinyapps.io/Visual_Resume/). I plan to release the code as an R package shortly.
+
 
 # Download
 
@@ -40,14 +46,4 @@ Phillips, N., Neth, H., Gaissmaeier, W., Navarro, D., Newell, B. & Rieskamp, J. 
 
 Phillips, N., Neth, H., Gaissmaeier, W., Navarro, D., Newell, B. & Rieskamp, J. (2016). Peeks and Keeps: Optional risk decisions from experience. Annual meeting for the Society for Mathematical Psychology, New Brunswick, NJ.
 
-
-## Visual Resume
-
-Here is my visual resume, built entirely from scratch in R!
-
-```{r, out.width = "700px", echo = FALSE, fig.align='center'}
-knitr::include_graphics("media/PhillipsInfographicResume.jpg")
-```
-
-You can create your own visual resume using the [visual resume Shiny app](https://ndphillips.shinyapps.io/Visual_Resume/). I plan to release the code as an R package shortly.
 
