@@ -4,11 +4,11 @@ navbar:
   title: "Nathaniel D. Phillips"                               
   type: inverse
   left:
-    - text: "About"
+    - text: " About"
       icon: fa-user 
       href: about.html
     - text: "CV"
-      icon: fa-file-pdf-o
+      icon: fa-university
       href: cv.html
     - text: "R Packages"
       icon: fa-dropbox
