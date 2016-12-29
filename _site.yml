@@ -1,7 +1,7 @@
 name: "Nathaniel D. Phillips" 
 output_dir: "."
 navbar:
-  title: "Nathaniel D. Phillips, PhD"                               
+  title: "Nathaniel D. Phillips"                               
   type: inverse
   left:
     - text: "About"
@@ -21,6 +21,9 @@ navbar:
     - text: "YaRrr!"
       icon: fa-book 
       href: piratesguide.html
+    - text: "Tutorials"
+      icon: fa-graduation-cap
+      href: tutorials.html
     - text: "Blog"
       icon: fa-rss
       href: https://ndphillips.github.io/blog/   
@@ -28,10 +31,10 @@ navbar:
     - text: "Email"
       icon: fa-envelope-o
       href: mailto:Nathaniel.D.Phillips.is@gmail.com                      
-    - text: "GitHub"
+    - text: ""
       icon: fa-github
       href: https://github.com/ndphillips
-    - text: "LinkedIn"
+    - text: ""
       icon: fa-linkedin
       href: https://www.linkedin.com/in/nathanieldphillips   
 output:
