@@ -1,5 +1,5 @@
 ---
-title: "Welcome!"
+title: "Nathaniel D. Phillips, PhD."
 ---
 
 ```{r, out.width = "800px", echo = FALSE, fig.align='center'}
