@@ -1,10 +1,12 @@
 ---
-title: "CV and Resume"
+title: "CV / Resume"
 ---
 
 ```{r, out.width = "900px", echo = FALSE, fig.align='center'}
 knitr::include_graphics("media/swissmountains (1 of 1).jpg")
 ```
+
+# Download
 
 You can download my resume and CV with the following links:
 
