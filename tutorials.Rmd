@@ -18,7 +18,7 @@ bibliography: homepage.bib
 | [Maximum Likelihood parameter estimation with R](http://rpubs.com/YaRrr/MLTutorial)| Calculating maximum likelihood parameter estimates in R using a probabilistic model of choice from @gonzalez2002making| 
 
 
-## Miscelaneous
+## Miscellaneous
 
 
 | Link          | Description |
