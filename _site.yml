@@ -32,7 +32,7 @@ navbar:
       href: tutorials.html
     - text: "Blog"
       icon: fa-rss
-      href: https://ndphillips.github.io/blog/   
+      href: blog.html 
   right:
     - text: "Email"
       icon: fa-envelope-o

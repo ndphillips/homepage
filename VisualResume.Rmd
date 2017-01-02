@@ -71,7 +71,7 @@ VisualResume::VisualResume(
 )
 ```
 
-### Specifying locations directly
+### Customising
 
 If a plot does not come out the way you want it to, you can specify some plotting parameters in the `top` and `bottom` dataframes by including the columns `box.x0, box.x1, box.y1, box.y2`, which control the locations of the boxes, `point.x, point.y` which control the locations of the points, and `label.x, label.y, label.dir` which specify the locations and direction of the labels.
 
