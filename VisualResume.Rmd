@@ -5,7 +5,7 @@ bibliography: homepage.bib
 
 The `VisualResume` package contains the `VisualResume.R` function which produces a Visual resume like the one below:
 
-```{r echo = TRUE, fig.width = 13, fig.height = 10}
+```{r echo = FALSE, fig.width = 13, fig.height = 10}
 VisualResume::VisualResume(
   titles.left = c("Nathaniel D. Phillips, PhD.", "R, Data, and Decision Science", "*Built with love in R using the InfoResume package (www.ndphillips.github.io"),
   titles.right = c("www.nathanieldphillips.com", "Nathaniel.D.Phillips.is@gmail.com", "Full Resume Link: www.ndphillips.github.io/cv"),
@@ -28,8 +28,8 @@ VisualResume::VisualResume(
                                 "Gonzalez-Vallejo et al. (2013). Early positive information impacts final [...].\nJournal of Behavioral Decision Making, 27.",
                                 "Gonzalez-Vallejo & Phillips, N. D. (2012). Predicting soccer matches [...].\nJudgment and Decision Making. 5(3). 200-206.")),
   interests = list("Programming" = c(rep("R", 20), rep("Python", 1), rep("JavaScript", 2), "MatLab", "asdf"),
-                   "Statistics" = c(rep("Trees", 10), rep("Bayesian", 5), rep("Regression", 3)),
-                   "Research" = c(rep("Search", 10), rep("Dec Making", 5), rep("Reasoning", 3)))
+                   "Statistics" = c(rep("Dec Trees", 10), rep("Bayesian", 5), rep("Regression", 3), rep("Markov DP")),
+                   "Research" = c(rep("Search", 10), rep("Dec Making", 5), rep("RI Learning", 3), rep("Competition", 6)))
 )
 ```
 
@@ -40,4 +40,72 @@ You can install `VisualResume` from GitHub as follows:
 #install.packages("devtools") # Only if you don't have the devtools package
 devtools::install_github("ndphillips/VisualResume")
 ```
+
+To create a Visual Resume, you need to include several arguments that specify the content, size and location of the labels. The function will automatically format the resume to fit your specifications. Here are the main arguments:
+
+```{r, fig.width = 13, fig.height = 10}
+VisualResume::VisualResume(
+  titles.left = c("Title 1", "Title 2", "Title 3"),
+  titles.right = c("Title 1", "Title 2", "Title 3"),
+  center.labels = c("Label 1", "Label 2"),
+  top = data.frame(title = c("A", "B", "C", "D", "E", "F"),
+                   sub = c("a", "b", "c", "d", "e", "f"),
+                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1),
+                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2017)),
+  bottom = data.frame(title = c("G", "H", "I", "J", "K", "L", "M", "N"),
+                      sub = c("g", "h", "i", "j", "k", "l", "m", "n"),
+                      start = c(2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
+                      end = c(2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2017)),
+  milestones = data.frame(title = c("M1", "M2", "M3"),
+                          subtitle = c("2005", "2010", "2014"),
+                          date = c(2005.5, 2010.9, 2014.5)),
+  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
+                      title = c("EVENT 1",
+                                "EVENT 2",
+                                "EVENT 3",
+                                "EVENT 4",
+                                "EVENT 5")),
+  interests = list("AREA1" = c(rep("A", 20), rep("B", 1), rep("C", 2), "D", "E"),
+                   "AREA2" = c(rep("A", 10), rep("B", 5), rep("C", 3), rep("D")),
+                   "AREA3" = c(rep("A", 10), rep("B", 5), rep("C", 3), rep("D", 6)))
+)
+```
+
+### Specifying locations directly
+
+If a plot does not come out the way you want it to, you can specify some plotting parameters in the `top` and `bottom` dataframes by including the columns `box.x0, box.x1, box.y1, box.y2`, which control the locations of the boxes, `point.x, point.y` which control the locations of the points, and `label.x, label.y, label.dir` which specify the locations and direction of the labels.
+
+For example, in the following plot, I'll make some adjustments:
+
+```{r fig.width = 13, fig.height = 10}
+VisualResume::VisualResume(
+  titles.left = c("Title 1", "Title 2", "Title 3"),
+  titles.right = c("Title 1", "Title 2", "Title 3"),
+  center.labels = c("Label 1", "Label 2"),
+  top = data.frame(title = c("A", "B", "C", "D", "E", "F"),
+                   sub = c("a", "b", "c", "d", "e", "f"),
+                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1),
+                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2017),
+                   point.x = c(2002, 2007, 2011.2, 2015.5, 2015.5, 2016.3)),
+  bottom = data.frame(title = c("G", "H", "I", "J", "K", "L", "M", "N"),
+                      sub = c("g", "h", "i", "j", "k", "l", "m", "n"),
+                      start = c(2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
+                      end = c(2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2017),
+                      point.x = c(2006, 2009.7, 2010.2, 2014.8, 2015.1, 2015.5, 2016.3, 2016.8)),
+  milestones = data.frame(title = c("M1", "M2", "M3"),
+                          subtitle = c("2005", "2010", "2014"),
+                          date = c(2005.5, 2010.9, 2014.5)),
+  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
+                      title = c("EVENT 1",
+                                "EVENT 2",
+                                "EVENT 3",
+                                "EVENT 4",
+                                "EVENT 5")),
+  interests = list("AREA1" = c(rep("A", 20), rep("B", 1), rep("C", 2), "D", "E"),
+                   "AREA2" = c(rep("A", 10), rep("B", 5), rep("C", 3), rep("D")),
+                   "AREA3" = c(rep("A", 10), rep("B", 5), rep("C", 3), rep("D", 6)))
+)
+```
+
+
 
