@@ -7,4 +7,4 @@ title: "Nathaniel D. Phillips, PhD."
 Posts:
 
 
-2 January 2016: [TEST POST](www.ndphillips.github.io/blog/TestPost.html)
+2 January 2016: [TEST POST](/blog/TestPost.html)
