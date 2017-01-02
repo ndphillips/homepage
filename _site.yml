@@ -21,6 +21,9 @@ navbar:
         - text: "---------"
         - text: "FFTrees"
           href: FFTrees.html
+        - text: "---------"
+        - text: "VisualResume"
+          href: VisualResume.html
     - text: "YaRrr!"
       icon: fa-book 
       href: piratesguide.html

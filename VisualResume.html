@@ -11,7 +11,7 @@
 
 
 
-<title>FFTrees</title>
+<title>VisualResume</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -276,47 +276,41 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">FFTrees</h1>
+<h1 class="title toc-ignore">VisualResume</h1>
 
 </div>
 
 
-<p>The <code>FFTrees</code> package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are very simple <a href="https://en.wikipedia.org/wiki/Heuristic">heuristics</a> decision algorithms that, in contrast to regression and more complex algorithms such as <a href="https://en.wikipedia.org/wiki/Random_forest">random forests</a> and (non-frugal) <a href="https://en.wikipedia.org/wiki/Decision_tree">decision trees</a>, allow people to make fast decisions based on minimal information. FFTs are not just easy to use, they can also predict data as well, if not better, than more complex algorithms such as regression <span class="citation">(Gigerenzer and Todd 1999; Martignon, Katsikopoulos, and Woike 2008)</span>. Because they are so effective and easy to use and, fast and frugal trees have been used to improve decision making in medical <span class="citation">(Green and Mehr 1997; Jenny et al. 2013)</span> and financial <span class="citation">(Neth et al. 2014)</span> contexts.</p>
-<p>The purpose of <code>FFTrees</code> is to allow anyone to quickly and easily generate, visualise, and use FFTs for their own data.</p>
-<pre class="r"><code>install.packages(&quot;FFTrees&quot;)
-# devtools::install_github(&quot;ndphillips/FFTrees&quot;, build_vignettes = TRUE) # developer version</code></pre>
-<pre class="r"><code>library(FFTrees)
-
-set.seed(100) # For cross validation replication
-heart.fft &lt;- FFTrees(formula = diagnosis ~.,        # formula
-                     data = heartdisease,           # dataframe
-                     train.p = .5)                  # cross validation split
-
-plot(heart.fft,                                     # FFTrees object
-     main = &quot;Heart Disease&quot;,                        # Plot title
-     decision.names = c(&quot;Healthy&quot;, &quot;Diseased&quot;),     # Decision names
-     data = &quot;test&quot;)                                 # Show statistics for test data</code></pre>
-<p><img src="FFTrees_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
-<div id="refs" class="references">
-<div id="ref-gigerenzer1999simple">
-<p>Gigerenzer, Gerd, and Peter M Todd. 1999. <em>Simple Heuristics That Make Us Smart</em>. Oxford University Press, USA.</p>
-</div>
-<div id="ref-green1997alters">
-<p>Green, Lee, and David R Mehr. 1997. “What Alters Physicians’ Decisions to Admit to the Coronary Care Unit?” <em>Journal of Family Practice</em> 45 (3). [New York, Appleton-Century-Crofts]: 219–26.</p>
-</div>
-<div id="ref-jenny2013simple">
-<p>Jenny, Mirjam A, Thorsten Pachur, S Lloyd Williams, Eni Becker, and Jürgen Margraf. 2013. “Simple Rules for Detecting Depression.” <em>Journal of Applied Research in Memory and Cognition</em> 2 (3). Elsevier: 149–57.</p>
-</div>
-<div id="ref-martignon2008categorization">
-<p>Martignon, Laura, Konstantinos V Katsikopoulos, and Jan K Woike. 2008. “Categorization with Limited Resources: A Family of Simple Heuristics.” <em>Journal of Mathematical Psychology</em> 52 (6). Elsevier: 352–61.</p>
-</div>
-<div id="ref-neth2014homo">
-<p>Neth, Hansjörg, Björn Meder, Amit Kothiyal, and Gerd Gigerenzer. 2014. “Homo Heuristicus in the Financial World: From Risk Management to Managing Uncertainty.” <em>Journal of Risk Management in Financial Institutions</em> 7 (2). Henry Stewart Publications: 134–44.</p>
-</div>
-</div>
-</div>
+<p>The <code>VisualResume</code> package contains the <code>VisualResume.R</code> function which produces a Visual resume like the one below:</p>
+<pre class="r"><code>VisualResume::VisualResume(
+  titles.left = c(&quot;Nathaniel D. Phillips, PhD.&quot;, &quot;R, Data, and Decision Science&quot;, &quot;*Built with love in R using the InfoResume package (www.ndphillips.github.io&quot;),
+  titles.right = c(&quot;www.nathanieldphillips.com&quot;, &quot;Nathaniel.D.Phillips.is@gmail.com&quot;, &quot;Full Resume Link: www.ndphillips.github.io/cv&quot;),
+  center.labels = c(&quot;Education &amp; Research&quot;, &quot;Teaching &amp; Work&quot;),
+  top = data.frame(title = c(&quot;Grinnell College&quot;, &quot;Ohio U&quot;, &quot;U of Basel&quot;, &quot;MPIB&quot;, &quot;U of Konstanz&quot;, &quot;U of Basel&quot;),
+                   sub = c(&quot;BA. Student&quot;, &quot;MS. Student&quot;, &quot;PhD. Student&quot;, &quot;PhD. Researcher&quot;, &quot;PostDoc&quot;, &quot;PostDoc&quot;),
+                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1),
+                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2017)),
+  bottom = data.frame(title = c(&quot;Musician&#39;s Friend&quot;, &quot;Statistics&quot;, &quot;Research Methods&quot;, &quot;Information Search&quot;, &quot;R&quot;, &quot;R&quot;, &quot;R&quot;, &quot;R&quot;),
+                      sub = c(&quot;Statistician&quot;, &quot;Ohio U&quot;, &quot;Ohio U&quot;, &quot;Konstanz&quot;, &quot;Konstanz&quot;, &quot;Konstanz&quot;, &quot;Basel&quot;, &quot;Basel&quot;),
+                      start = c(2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
+                      end = c(2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2017)),
+  milestones = data.frame(title = c(&quot;BA Math&quot;, &quot;MS Psych&quot;, &quot;Ph.D Psych&quot;),
+                          subtitle = c(&quot;2005&quot;, &quot;2010&quot;, &quot;2014&quot;),
+                          date = c(2005.5, 2010.9, 2014.5)),
+  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
+                      title = c(&quot;Phillips (in prep). YaRrr! The Pirate&#39;s Guide to R. Self-published e-book.&quot;,
+                                &quot;Hintze et al. (2015). The Janus face of Darwinian competition.\nScientific Reports, 5.&quot;,
+                                &quot;Phillips et al. (2014). Rivals in the Dark: How competition influences [...].\nCognition, 113(1), 104-119.&quot;,
+                                &quot;Gonzalez-Vallejo et al. (2013). Early positive information impacts final [...].\nJournal of Behavioral Decision Making, 27.&quot;,
+                                &quot;Gonzalez-Vallejo &amp; Phillips, N. D. (2012). Predicting soccer matches [...].\nJudgment and Decision Making. 5(3). 200-206.&quot;)),
+  interests = list(&quot;Programming&quot; = c(rep(&quot;R&quot;, 20), rep(&quot;Python&quot;, 1), rep(&quot;JavaScript&quot;, 2), &quot;MatLab&quot;, &quot;asdf&quot;),
+                   &quot;Statistics&quot; = c(rep(&quot;Trees&quot;, 10), rep(&quot;Bayesian&quot;, 5), rep(&quot;Regression&quot;, 3)),
+                   &quot;Research&quot; = c(rep(&quot;Search&quot;, 10), rep(&quot;Dec Making&quot;, 5), rep(&quot;Reasoning&quot;, 3)))
+)</code></pre>
+<p><img src="VisualResume_files/figure-html/unnamed-chunk-1-1.png" width="1248" /></p>
+<p>You can install <code>VisualResume</code> from GitHub as follows:</p>
+<pre class="r"><code>#install.packages(&quot;devtools&quot;) # Only if you don&#39;t have the devtools package
+devtools::install_github(&quot;ndphillips/VisualResume&quot;)</code></pre>
 
 
 
