@@ -11,7 +11,7 @@
 
 
 
-<title>VisualResume</title>
+<title>VisualResume 0.1.0</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -231,7 +231,7 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="blog.html">
+  <a href="https://ndphillips.github.io/blog/">
     <span class="fa fa-rss"></span>
      
     Blog
@@ -276,7 +276,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">VisualResume</h1>
+<h1 class="title toc-ignore">VisualResume 0.1.0</h1>
 
 </div>
 
@@ -287,64 +287,46 @@ $(document).ready(function () {
 <pre class="r"><code>#install.packages(&quot;devtools&quot;) # Only if you don&#39;t have the devtools package
 devtools::install_github(&quot;ndphillips/VisualResume&quot;)</code></pre>
 <p>To create a Visual Resume, you need to include several arguments that specify the content, size and location of the labels. The function will automatically format the resume to fit your specifications. Here are the main arguments:</p>
+<ul>
+<li><code>titles.left</code>, <code>titles.right</code>: Character vectors (length 3) indicating the header labels.</li>
+<li><code>titles.right.cex</code>, <code>titles.left.cex</code>: Numeric vectors (length 3) indicating the size of the header labels.</li>
+<li><code>timeline.labels</code>: Character vector (length 2) indicating labels for the top and bottom of the timeline</li>
+<li><code>timeline</code>: A dataframe with columns <code>title</code>, <code>sub</code>, <code>start</code>, <code>end</code>, <code>side</code>. The <code>title</code> and <code>sub</code> columns are vectors, <code>start</code> and <code>end</code> are integers, and <code>side</code> is binary (0 = bottom, 1 = top).</li>
+<li><code>milestones</code>: A dataframe with columns <code>title</code>, <code>sub</code>, <code>year</code>.</li>
+<li><code>events</code>: A dataframe with columns <code>title</code>, <code>year</code>.</li>
+<li><code>interests</code>: A list of character vectors specifying interests. The more often an interest occurs in a vector, the larger it will be displayed.</li>
+</ul>
+<p>For example, here are the inputs that created Walter White’s Visual Resume above:</p>
 <pre class="r"><code>VisualResume::VisualResume(
-  titles.left = c(&quot;Title 1&quot;, &quot;Title 2&quot;, &quot;Title 3&quot;),
-  titles.right = c(&quot;Title 1&quot;, &quot;Title 2&quot;, &quot;Title 3&quot;),
-  center.labels = c(&quot;Label 1&quot;, &quot;Label 2&quot;),
-  top = data.frame(title = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;),
-                   sub = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;),
-                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1),
-                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2017)),
-  bottom = data.frame(title = c(&quot;G&quot;, &quot;H&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;N&quot;),
-                      sub = c(&quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;),
-                      start = c(2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
-                      end = c(2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2017)),
-  milestones = data.frame(title = c(&quot;M1&quot;, &quot;M2&quot;, &quot;M3&quot;),
-                          subtitle = c(&quot;2005&quot;, &quot;2010&quot;, &quot;2014&quot;),
-                          date = c(2005.5, 2010.9, 2014.5)),
-  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
-                      title = c(&quot;EVENT 1&quot;,
-                                &quot;EVENT 2&quot;,
-                                &quot;EVENT 3&quot;,
-                                &quot;EVENT 4&quot;,
-                                &quot;EVENT 5&quot;)),
-  interests = list(&quot;AREA1&quot; = c(rep(&quot;A&quot;, 20), rep(&quot;B&quot;, 1), rep(&quot;C&quot;, 2), &quot;D&quot;, &quot;E&quot;),
-                   &quot;AREA2&quot; = c(rep(&quot;A&quot;, 10), rep(&quot;B&quot;, 5), rep(&quot;C&quot;, 3), rep(&quot;D&quot;)),
-                   &quot;AREA3&quot; = c(rep(&quot;A&quot;, 10), rep(&quot;B&quot;, 5), rep(&quot;C&quot;, 3), rep(&quot;D&quot;, 6)))
+titles.left = c(&quot;Walter White, PhD&quot;, &quot;Chemistry, Cooking, Pizza&quot;, &quot;*Built with love in R using the VisualResume package: www.ndphillips.github.io/VisualResume&quot;),
+titles.right = c(&quot;www.lospolloshermanos.com&quot;, &quot;TheOneWhoKnocks@gmail.com&quot;, &quot;Full Resume: https://ndphillips.github.io/cv.html&quot;),
+timeline.labels = c(&quot;Education&quot;, &quot;Teaching&quot;),
+timeline = data.frame(title = c(&quot;Grinnell Col&quot;, &quot;Ohio U&quot;, &quot;U of Basel&quot;, &quot;Max Planck Institute&quot;, &quot;Old Van&quot;, &quot;Gray Matter&quot;, &quot;Sandia Laboratories&quot;, &quot;J.P. Wynne High School&quot;, &quot;A1A Car Wash&quot;),
+                      sub = c(&quot;BA. Student&quot;, &quot;MS. Student&quot;, &quot;PhD. Student&quot;, &quot;PhD. Researcher&quot;, &quot;Methamphetamine Research&quot;, &quot;Co-Founder&quot;, &quot;Chemist&quot;, &quot;Chemistry Teacher&quot;, &quot;Co-Owner&quot;),
+                      start = c(1976, 1980.1, 1982.2, 1985, 1996.5, 1987, 1991, 1995, 2001),
+                      end = c(1980, 1982, 1985, 1987, 1998, 1992, 1995, 1998, 2003),
+                      side = c(1, 1, 1, 1, 1, 0, 0, 0, 0)),
+milestones = data.frame(title = c(&quot;BA&quot;, &quot;MS&quot;, &quot;PhD&quot;),
+                        sub = c(&quot;Math&quot;, &quot;Chemistry&quot;, &quot;Chemistry&quot;),
+                        year = c(1980, 1982, 1985)),
+events = data.frame(year = c(1985, 1995, 1997, 1999, 2000),
+                    title = c(&quot;Contributed to Nobel Prize winning experiment.&quot;,
+                              &quot;Honorary mention for best Chemistry teacher of the year.&quot;,
+                              &quot;Created Blue Sky, the most potent methamphetamine ever produced.&quot;,
+                              &quot;Made first $1,000,000.&quot;,
+                              &quot;White, W., &amp; Pinkman, J. (2000). Blue Sky: A method of [...].\nJournal of Psychopharmical Substances, 1(1),.&quot;)),
+interests = list(&quot;programming&quot; = c(rep(&quot;R&quot;, 10), rep(&quot;Python&quot;, 1), rep(&quot;JavaScript&quot;, 2), &quot;MatLab&quot;),
+                 &quot;statistics&quot; = c(rep(&quot;Decision Trees&quot;, 10), rep(&quot;Bayesian&quot;, 5), rep(&quot;Regression&quot;, 3)),
+                 &quot;leadership&quot; = c(rep(&quot;Motivation&quot;, 10), rep(&quot;Decision Making&quot;, 5), rep(&quot;Manipulation&quot;, 30))),
+year.steps = 2
 )</code></pre>
-<p><img src="VisualResume_files/figure-html/unnamed-chunk-3-1.png" width="1248" /></p>
 <div id="customising" class="section level3">
 <h3>Customising</h3>
-<p>If a plot does not come out the way you want it to, you can specify some plotting parameters in the <code>top</code> and <code>bottom</code> dataframes by including the columns <code>box.x0, box.x1, box.y1, box.y2</code>, which control the locations of the boxes, <code>point.x, point.y</code> which control the locations of the points, and <code>label.x, label.y, label.dir</code> which specify the locations and direction of the labels.</p>
-<p>For example, in the following plot, I’ll make some adjustments:</p>
-<pre class="r"><code>VisualResume::VisualResume(
-  titles.left = c(&quot;Title 1&quot;, &quot;Title 2&quot;, &quot;Title 3&quot;),
-  titles.right = c(&quot;Title 1&quot;, &quot;Title 2&quot;, &quot;Title 3&quot;),
-  center.labels = c(&quot;Label 1&quot;, &quot;Label 2&quot;),
-  top = data.frame(title = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;),
-                   sub = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;),
-                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1),
-                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2017),
-                   point.x = c(2002, 2007, 2011.2, 2015.5, 2015.5, 2016.3)),
-  bottom = data.frame(title = c(&quot;G&quot;, &quot;H&quot;, &quot;I&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;N&quot;),
-                      sub = c(&quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;),
-                      start = c(2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
-                      end = c(2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2017),
-                      point.x = c(2006, 2009.7, 2010.2, 2014.8, 2015.1, 2015.5, 2016.3, 2016.8)),
-  milestones = data.frame(title = c(&quot;M1&quot;, &quot;M2&quot;, &quot;M3&quot;),
-                          subtitle = c(&quot;2005&quot;, &quot;2010&quot;, &quot;2014&quot;),
-                          date = c(2005.5, 2010.9, 2014.5)),
-  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
-                      title = c(&quot;EVENT 1&quot;,
-                                &quot;EVENT 2&quot;,
-                                &quot;EVENT 3&quot;,
-                                &quot;EVENT 4&quot;,
-                                &quot;EVENT 5&quot;)),
-  interests = list(&quot;AREA1&quot; = c(rep(&quot;A&quot;, 20), rep(&quot;B&quot;, 1), rep(&quot;C&quot;, 2), &quot;D&quot;, &quot;E&quot;),
-                   &quot;AREA2&quot; = c(rep(&quot;A&quot;, 10), rep(&quot;B&quot;, 5), rep(&quot;C&quot;, 3), rep(&quot;D&quot;)),
-                   &quot;AREA3&quot; = c(rep(&quot;A&quot;, 10), rep(&quot;B&quot;, 5), rep(&quot;C&quot;, 3), rep(&quot;D&quot;, 6)))
-)</code></pre>
-<p><img src="VisualResume_files/figure-html/unnamed-chunk-4-1.png" width="1248" /></p>
+<p>If a plot does not come out the way you want it to, you can specify some plotting parameters in the <code>timeline</code> dataframe by including the columns <code>box.x0, box.x1, box.y1, box.y2</code>, which control the locations of the boxes, <code>point.x, point.y</code> which control the locations of the points, and <code>label.x, label.y, label.dir</code> which specify the locations and direction of the labels. See the help menu for <code>VisualResume</code> for additional details.</p>
+</div>
+<div id="bug-reports" class="section level3">
+<h3>Bug-reports</h3>
+<p>This package is very young and likely contains many bugs and room for improvement. Please submit bug reports and feature requests at <a href="https://github.com/ndphillips/VisualResume/issues" class="uri">https://github.com/ndphillips/VisualResume/issues</a></p>
 </div>
 
 
