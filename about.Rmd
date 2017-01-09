@@ -29,6 +29,11 @@ I have given several talks and workshops on decision making and R at internation
 I have tought courses and supervised theses in judgment and decision making, research design, statistics, and R programming at universities such as the University of Basel and University of Konstanz. You can find an example of my course syllabi [here](http://www.rpubs.com/YaRrr/syllabus_Winter2016)
 
 
+#### Interviews / Press
+
+- [The European Association for Decision Making Interview](http://eadm.eu/the-eadm-interview/nathaniel-philips/)
+
+
 #### Links
 
-Feel free to check out some of my other relevant pages: [Research Gate](https://www.researchgate.net/profile/Nathaniel_Phillips2), [Google Scholar](http://scholar.google.com/citations?user=S-OOdSIAAAAJ), [LinkedIn](https://www.linkedin.com/in/nathanieldphillips).
+Here are some of my other relevant pages: [Research Gate](https://www.researchgate.net/profile/Nathaniel_Phillips2), [Google Scholar](http://scholar.google.com/citations?user=S-OOdSIAAAAJ), [LinkedIn](https://www.linkedin.com/in/nathanieldphillips).
