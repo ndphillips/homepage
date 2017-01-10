@@ -24,9 +24,9 @@ VisualResume::VisualResume(
                                 "Phillips et al. (2014). Rivals in the Dark: How competition influences [...].\nCognition, 113(1), 104-119.",
                                 "Gonzalez-Vallejo et al. (2013). Early positive information impacts final [...].\nJournal of Behavioral Decision Making, 27.",
                                 "Gonzalez-Vallejo & Phillips, N. D. (2012). Predicting soccer matches [...].\nJudgment and Decision Making. 5(3). 200-206.")),
-  interests = list("programming" = c(rep("R", 20), rep("Python", 1), rep("JavaScript", 2), "MatLab", "asdf"),
-                   "statistics" = c(rep("Decision Trees", 10), rep("Bayesian", 5), rep("Regression", 3)),
-                   "research" = c(rep("Search", 10), rep("Dec Making", 5), rep("Reasoning", 3))),
+  interests = list("programming" = c(rep("R", 20), rep("Python", 1), rep("JavaScript", 2), rep("STAN", 5)),
+                   "statistics" = c(rep("Dec. Trees", 10), rep("Bayesian", 5), rep("Regression", 3)),
+                   "research" = c(rep("Search", 10), rep("Dec Making", 5), rep("Competition", 3), rep("Learning", 8))),
   col = "xmen",
   trans = .6)
 ```
