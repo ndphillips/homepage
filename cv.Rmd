@@ -2,7 +2,6 @@
 title: "CV / Resume"
 ---
 
-
 Here is my visual resume built using my `VisualResume` R package (see [Visual Resume R Package](VisualResume.html)).
 
 ```{r, fig.width = 13, fig.height = 10, echo = FALSE}
