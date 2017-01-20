@@ -7,17 +7,6 @@ ShinyBART runs the Balloon Analogue Risk Task (BART), a measure developed by @le
 
 ## Task Description
 
-In the task, you are presented with several (e.g.; 15) balloons sequentially. When you see a balloon, you can pump it by pressing a 'Pump' button. If you save a balloon before it pops, you will earn points for that balloon. If it pops, you earn no points for that balloon!
-
-You can pump balloons by clicking the 'Pump' button below each balloon. Each time you pump a balloon, it will get a bit larger and has the potential to give you more points.
-
-To earn points, you need to SAVE a balloon before it pops! You can save a balloon at any time by clicking the 'Save' button. If you save a balloon, you will earn points equal to the number of pumps you put into it. You will then move on to the next balloon
-
-However -- if you pump a balloon too much it might pop! If a balloon pops, you cannot save it and will not earn any points for that balloon. You will then move on to the next balloon.
-
-You will have the opportunity to pump 15 balloons. Different balloons have different popping points and you never know exactly when each balloon will pop. However, you know for sure that the maximum possible number of pumps for a balloon is a certain value (e.g.; 50).
-
-
 ```{r, echo = FALSE, fig.width = 10, fig.height = 5}
 bart.display <- function(balloon, 
                          pumps, 
@@ -105,9 +94,21 @@ bart.display <- function(balloon,
   
 }
 
-bart.display(1, 5, 0, saveballoon = TRUE, balloons.n = 15, max.pumps = 50)
-bart.display(1, 40, 5, pop = TRUE, balloons.n = 15, max.pumps = 50)
+bart.display(1, 40, 0, pop = TRUE, balloons.n = 15, max.pumps = 50)
 ```
+
+In the task, you are presented with several (e.g.; 15) balloons sequentially. When you see a balloon, you can pump it by pressing a 'Pump' button. If you save a balloon before it pops, you will earn points for that balloon. If it pops, you earn no points for that balloon!
+
+You can pump balloons by clicking the 'Pump' button below each balloon. Each time you pump a balloon, it will get a bit larger and has the potential to give you more points.
+
+To earn points, you need to SAVE a balloon before it pops! You can save a balloon at any time by clicking the 'Save' button. If you save a balloon, you will earn points equal to the number of pumps you put into it. You will then move on to the next balloon
+
+However -- if you pump a balloon too much it might pop! If a balloon pops, you cannot save it and will not earn any points for that balloon. You will then move on to the next balloon.
+
+Different balloons have different popping points and you never know exactly when each balloon will pop. However, you know for sure that the maximum possible number of pumps for a balloon is a certain value (e.g.; 50).
+
+
+
 
 ## Play ShinyBART
 
