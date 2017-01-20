@@ -7,7 +7,7 @@ ShinyBandit is an implimentation of a Bandit task. Bandit tasks are prototypical
 
 You can play ShinyBandit at [https://econpsychbasel.shinyapps.io/ShinyBandit/](https://econpsychbasel.shinyapps.io/ShinyBandit/) or in the window below:
 
-<iframe src="https://econpsychbasel.shinyapps.io/ShinyBandit/", height = 500px, width = 800px, align = middle></iframe>
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyBandit/", height = 500px, width = 900px, align = middle></iframe>
 
 ## Task description
 
@@ -150,10 +150,6 @@ Each box has its own distribution of tickets. However, players do not know for s
 Players have a fixed (e.g.; 50) number of trials where they can select a box and draw a random ticket. When a ticket is drawn, the point value on the ticket is displayed and its value is added (or subtracted) to the player's cumulative point total. The ticket is then returned to the box. When the final trial is completed, the game is over.
 
 Players play the game several times. The distributions (boxes) are the same in each game. However, their location is randomly determined at the start of each game. Therefore, while players can learn about the overall decision environment from one game to another, they will always have to learn which option is which in each game.
-
-
-## Play ShinyBandit
-The best way to understand ShinyBandit is to play it yourself! You can play one version of ShinyBandit here: [https://econpsychbasel.shinyapps.io/ShinyBandit/](https://econpsychbasel.shinyapps.io/ShinyBandit/)
 
 
 ## Source code

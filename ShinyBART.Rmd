@@ -7,7 +7,7 @@ ShinyBART runs the Balloon Analogue Risk Task (BART), a measure developed by @le
 
 You can play ShinyBART at [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/) or in the window below:
 
-<iframe src="https://econpsychbasel.shinyapps.io/ShinyBART/", height = 500px, width = 800px, align = middle></iframe>
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyBART/", height = 500px, width = 900px, align = middle></iframe>
 
 
 ## Task Description
@@ -112,11 +112,6 @@ However -- if you pump a balloon too much it might pop! If a balloon pops, you c
 
 Different balloons have different popping points and you never know exactly when each balloon will pop. However, you know for sure that the maximum possible number of pumps for a balloon is a certain value (e.g.; 50).
 
-
-
-
-## Play ShinyBART
-You can play ShinyBART in the window above or at [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/)
 
 
 ## Source code
