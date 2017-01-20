@@ -7,7 +7,7 @@ ShinyBART runs the Balloon Analogue Risk Task (BART), a measure developed by @le
 
 ## Task Description
 
-```{r, echo = FALSE, fig.width = 10, fig.height = 5}
+```{r, echo = FALSE, fig.width = 5, fig.height = 4, fig.align = 'center'}
 bart.display <- function(balloon, 
                          pumps, 
                          points.cum = 0,
@@ -26,8 +26,8 @@ bart.display <- function(balloon,
   
   # Title row
   plot.new()
-  text(c(.1, .5, .9), c(.7, .7, .7), labels = c("Balloon", "Pumps", "Points"), cex = 2, font = 3)
-  text(c(.1, .5, .9), c(.4, .4, .4), labels = c(paste(balloon, "of", balloons.n), pumps, points.cum), cex = 3)
+  text(c(.1, .5, .9), c(.7, .7, .7), labels = c("Balloon", "Pumps", "Points"), cex = 1, font = 3)
+  text(c(.1, .5, .9), c(.4, .4, .4), labels = c(paste(balloon, "of", balloons.n), pumps, points.cum), cex = 1.5)
   
   # text(c(.1, .5, .9), c(.5, .5, .5), labels = c(paste(balloon, "of", balloons.n), pumps, points.cum), cex = 3)
 
@@ -65,11 +65,11 @@ bart.display <- function(balloon,
            bg = pop.col, 
            col = "black")
     
-    text(.5, .9, labels = paste("POPPED at pump", pumps), 
-         cex = 2, font = 3)
+    text(.5, 1, labels = paste("POPPED at pump", pumps), 
+         cex = 1, font = 3)
 
     
-     text(.7, .5, labels = paste("No Points"), cex = 2, font = 3)
+     text(.8, .5, labels = paste("No Points"), cex = 1, font = 3)
     
 
     
@@ -85,9 +85,9 @@ bart.display <- function(balloon,
            col = "black")
     
     text(.5, .9, labels = paste("Saved at pump", pumps), 
-          cex = 2, font = 3)
+          cex = 1, font = 3)
     
-    text(.7, .5, labels = paste("+", pumps, "Points"), cex = 2, font = 3)
+    text(.7, .5, labels = paste("+", pumps, "Points"), cex = 1, font = 3)
     
     
   }
