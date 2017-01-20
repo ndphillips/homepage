@@ -1,0 +1,36 @@
+---
+title: "ShinyPsych"
+bibliography: homepage.bib
+---
+
+ShinyPsych is an collection of psychology tasks (mostly decision making) written in [Shiny](http://shiny.rstudio.com), a web application framework built on the R programming language. The purpose of ShinyPsych is to give researchers the tools to create and impliment their own experiments online as easily as possible.
+
+## What is Shiny?
+
+Shiny is a web application framework for the R programming language. It allows you to create interactive web applications without knowing any HTML, CSS or JavaScript. 
+
+## Why is Shiny so great for writing and running online experiments?
+
+**It's all in R**: Because Shiny applications are entirely written in R, using the Shiny framework, they can be executed and customized without having to write a line of code other languages such as JavaScript, PHP, Ruby and even HTML. However, if you want, you can easily add your own custom code in these languages to your Shiny App. 
+
+**It's Free!**: Because R is open source, and RStudio will run apps for free (with some small restrictions), you can use the Shiny framework to write and run your experiments completely for free.
+
+
+## Applications
+
+Here are the applications currently available (in one stage or another) in the ShinyPsych collection. The best way to see what the applications do is to play them yourself! To see the underlying code and accompanying tutorials, click the code link:
+
+
+| Name / Page Link | Example | Description |  Code and Guide | 
+|-------------|-------------- | ---------------------------------- | -----------------------| --------------------- | 
+| [ShinyBART](ShinyBART.html)| [Play ShinyBART](https://econpsychbasel.shinyapps.io/ShinyBART/) |  The Balloon Analogue Risk Task [@lejuez2002evaluation]  | [www.github.com/ndphillips/ShinyBART](http://www.github.com/ndphillips/ShinyBART) |
+[ShinyBandit](ShinyBandit.html)| [Play ShinyBandit](https://econpsychbasel.shinyapps.io/ShinyBandit/) | An N-armed bandit task [@sutton1998reinforcement] | [www.github.com/ndphillips/ShinyBandit](http://www.github.com/ndphillips/ShinyBandit) 
+
+## Please contribute!
+
+ShinyPsych is currently in the very early stages of development and I welcome comments, suggestions, and new applications. Github users can post issues or pull requests. 
+
+In depth tutorials, from Markdown to YouTube videos, are coming...
+
+
+### References
