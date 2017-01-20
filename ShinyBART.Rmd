@@ -5,9 +5,14 @@ bibliography: homepage.bib
 
 ShinyBART runs the Balloon Analogue Risk Task (BART), a measure developed by @lejuez2002evaluation as a behavioral measure of risk taking.
 
+You can play ShinyBART at [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/) or in the window below:
+
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyBART/", height = 500px, width = 700px, align = middle></iframe>
+
+
 ## Task Description
 
-```{r, echo = FALSE, fig.width = 5, fig.height = 4, fig.align = 'center'}
+```{r, echo = FALSE, fig.width = 5, fig.height = 4, fig.align = 'center', eval = FALSE}
 bart.display <- function(balloon, 
                          pumps, 
                          points.cum = 0,
@@ -111,8 +116,8 @@ Different balloons have different popping points and you never know exactly when
 
 
 ## Play ShinyBART
+You can play ShinyBART in the window above or at [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/)
 
-You can play one version of the game here: [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/)
 
 ## Source code
 
