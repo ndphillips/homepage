@@ -5,7 +5,7 @@ bibliography: homepage.bib
 
 ShinyBandit is an implimentation of a Bandit task. Bandit tasks are prototypical examples of *reinforcement learning* tasks where an person (or animal or organization) is trying to maximize their rewards by interacting with an uncertain environment [@sutton1998reinforcement].
 
-You can play ShinyBandit at [https://econpsychbasel.shinyapps.io/ShinyBandit/](https://econpsychbasel.shinyapps.io/ShinyBandit/) or in the window below:
+You can play ShinyBandit at [https://econpsychbasel.shinyapps.io/ShinyBandit/](https://econpsychbasel.shinyapps.io/ShinyBandit/) or in the window below (Note that the app runs smoother in a separate window):
 
 <iframe src="https://econpsychbasel.shinyapps.io/ShinyBandit/", height = 500px, width = 900px, align = middle></iframe>
 
