@@ -7,7 +7,7 @@ ShinyBART runs the Balloon Analogue Risk Task (BART), a measure developed by @le
 
 You can play ShinyBART at [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/) or in the window below:
 
-<iframe src="https://econpsychbasel.shinyapps.io/ShinyBART/", height = 500px, width = 700px, align = middle></iframe>
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyBART/", height = 500px, width = 800px, align = middle></iframe>
 
 
 ## Task Description

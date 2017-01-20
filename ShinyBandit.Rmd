@@ -7,7 +7,7 @@ ShinyBandit is an implimentation of a Bandit task. Bandit tasks are prototypical
 
 You can play ShinyBandit at [https://econpsychbasel.shinyapps.io/ShinyBandit/](https://econpsychbasel.shinyapps.io/ShinyBandit/) or in the window below:
 
-<iframe src="https://econpsychbasel.shinyapps.io/ShinyBandit/", height = 500px, width = 700px, align = middle></iframe>
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyBandit/", height = 500px, width = 800px, align = middle></iframe>
 
 ## Task description
 
