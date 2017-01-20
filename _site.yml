@@ -7,9 +7,6 @@ navbar:
     - text: " About"
       icon: fa-user 
       href: about.html
-    - text: "CV"
-      icon: fa-university
-      href: cv.html
     - text: "Research"
       icon: fa-leaf
       href: research.html
@@ -27,6 +24,18 @@ navbar:
         - text: "---------"
         - text: "VisualResume"
           href: VisualResume.html
+    - text: "ShinyPsych"
+      icon: fa-users
+      menu:
+        - text: "Overview"
+          href: ShinyPsych.html
+        - text: "---------"
+        - text: "ShinyBandit"
+          href: ShinyBandit.html
+        - text: "---------"
+        - text: "ShinyBART"
+          href: ShinyBART.html
+        - text: "---------"
     - text: "YaRrr!"
       icon: fa-book 
       href: piratesguide.html
