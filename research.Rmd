@@ -22,7 +22,14 @@ How can people make better judgments and decisions? One way is to combine estima
 How should you change your decision making process when you are competing with other people in a complex, uncertain environment? In *Rivals in the dark: How competition influences decisions under uncertainty* [@phillips2014rivals] we introduce a new experimental paradigm called the *Competitive Sampling Game (CSG)* to measure the effects of competition on information search. Using the paradigm, we find that competition causes people to *dramatically* reduce their pre-decisional information search. In other words, when people, or organisations, compete with each other for finite resources, they will make decisions on much less data than if they did not compete. The reason for this is that people want to 'beat others to the punch' while having the fear of 'missing out.' While this is rational for people to do in relatively predictable environments, our paper shows how it can lead to disasterous outcomes in unpredictable environments such as those with rare but extreme negative events. For example, it explains how pharmeceudical companies under fierce competition are, without external regulation, prone to releasing drugs without due dilligence to check for rare but extreme side-effects.
 
 
-### Fast and frugal decision trees
+### Fast and frugal decision trees (FFTs)
+
+#### Presentations
+
+- [BaselR, 7 March 2017](https://ndphillips.github.io/BaselR/)
+
+Fast and frugal decision trees (FFTs) are simple decision algorithms that allow people to make efficient and effective classification decisions based on limited information. But despite their successful use in many applied domains, there is no widely available tool that allows anyone to easily create FFTs from data. We fill this gap by introducing the R package FFTrees. FFTrees allows anyone to create, visualize, and use FFTs from data with minimal programming. In this paper, we explain how FFTs work and provide a 5 step tutorial for using the FFTrees package to create them. We then conduct a simulation across a variety of real-world datasets to test how well FFTs created by FFTrees can predict data relative to popular prediction algorithms. Results show that FFTs created by FFTrees can predict data as well as the best of these algorithms while remaining simple enough for anyone to understand and use.
+
 
 
 ### Optional risk decisions from experience
