@@ -47,7 +47,7 @@ Here is my visual resume built using my `VisualResume` R package (see [Visual Re
 ```{r, fig.width = 13, fig.height = 10, echo = FALSE}
 VisualResume::VisualResume(
   titles.left = c("Nathaniel D. Phillips, PhD.", "R, Data, and Decision Science", "*Built with love in R using the InfoResume package"),
-  titles.right = c("www.nathanieldphillips.com", "Nathaniel.D.Phillips.is@gmail.com", "Full Resume Link: www.ndphillips.github.io/cv.html"),
+  titles.right = c("ndphillips.github.io", "Nathaniel.D.Phillips.is@gmail.com", ""),
   timeline.labels = c("Education", "Teaching"),
   timeline = data.frame(title = c("Grinnell College", "Ohio U", "U of Basel", "MPIB", "U of Konstanz", "U of Basel", "Musician's Friend", "Statistics", "Research Methods", "Information Search", "R", "R", "R", "R"),
                    sub = c("BA. Student", "MS. Student", "PhD. Student", "PhD. Researcher", "PostDoc", "PostDoc", "Statistician", "OhioU", "OhioU", "Konstanz", "Konstanz", "Konstanz", "Basel", "Basel"),
