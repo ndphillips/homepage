@@ -22,7 +22,11 @@ I have published research on unconscious decision making and decision making und
 
 #### Presentations 
 
-I have given several talks and workshops on decision making and R at international societies such as the Society for Judgment and Decision Making, the Society for Mathematical Psychology, and the Max Planck Institute for Human Development. I am available for future talks or workshops by <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">request</a>.
+I have given several talks and workshops on decision making and R at international societies such as the Society for Judgment and Decision Making, the Society for Mathematical Psychology, and the Max Planck Institute for Human Development. I am available for future talks by <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">request</a>.
+
+#### Workshops
+
+I conduct statistical programming workshops in R, ranging anywhere from 2 hours, to 3 full days. These workshops are designed to give people with little to no programming experience the tools they need to conduct replicable data analyses and create elegant research reports using R. Please <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">contact me</a> if you would like to arrange an on-site workshop.
 
 #### Teaching
 
@@ -46,14 +50,14 @@ Here is my visual resume built using my `VisualResume` R package (see [Visual Re
 
 ```{r, fig.width = 13, fig.height = 10, echo = FALSE}
 VisualResume::VisualResume(
-  titles.left = c("Nathaniel D. Phillips, PhD.", "R, Data, and Decision Science", "*Built with love in R using the InfoResume package"),
+  titles.left = c("Nathaniel D. Phillips, PhD.", "Data, Decision Science, and R piratery", "*Built with love in R using the VisualResume package"),
   titles.right = c("ndphillips.github.io", "Nathaniel.D.Phillips.is@gmail.com", ""),
-  timeline.labels = c("Education", "Teaching"),
-  timeline = data.frame(title = c("Grinnell College", "Ohio U", "U of Basel", "MPIB", "U of Konstanz", "U of Basel", "Musician's Friend", "Statistics", "Research Methods", "Information Search", "R", "R", "R", "R"),
-                   sub = c("BA. Student", "MS. Student", "PhD. Student", "PhD. Researcher", "PostDoc", "PostDoc", "Statistician", "OhioU", "OhioU", "Konstanz", "Konstanz", "Konstanz", "Basel", "Basel"),
-                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1, 2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
-                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2018, 2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2018),
-                   side = c(1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0)),
+  timeline.labels = c("Education", "Teaching / Work"),
+  timeline = data.frame(title = c("Grinnell College", "Ohio U", "U of Basel", "MPIB", "U of Konstanz", "U of Basel", "Musician's Friend", "Statistics", "Research Methods", "Information Search", "R", "R", "R", "R", "Data Analyst"),
+                   sub = c("BA. Student", "MS. Student", "PhD. Student", "PhD. Researcher", "PostDoc", "PostDoc", "Statistician", "OhioU", "OhioU", "Konstanz", "Konstanz", "Konstanz", "Basel", "Basel", "Rosche"),
+                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1, 2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7, 2017.2),
+                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2018, 2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2018, 2017.8),
+                   side = c(1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)),
   milestones = data.frame(title = c("BA Math", "MS Psych", "Ph.D Psych"),
                           sub = c("2005", "2010", "2014"),
                           year = c(2005.5, 2010.9, 2014.5)),
@@ -93,17 +97,17 @@ González-Vallejo, C. &amp; Phillips, N. D. (2010). Predicting soccer matches: A
 
 Lassiter, G. D., Lindberg, M. J, Gonzalez-Vallejo, C., Bellezza, F. S., & Phillips, N. D. (2009). The deliberation-without-attention effect: Evidence for an artifactual interpretation. <i>Psychological Science, 20(6)</i>, 671-675. <a href="http://ndphillips/github.io/media/lassiter2009deliberation.pdf">PDF</a>
 
-# Workshops
+# Recent Workshops
 
-Phillips, N. (in prep). R: The solution to (almost) all of your life's problems. Congress for psychology students (psyKo). Schuepfheim, Switzerland.
+Phillips, N. (2017). R: The solution to your wildest data dreams. Congress for psychology students (psyKo). Schuepfheim, Switzerland. <a href="https://ndphillips.github.io/PsyKo-March2017">HTML</a>
 
-Phillips, N. (2016). Creating R packages for research documentation. Early career judgment and decision making workshop, Basel, Switzerland. <a href="http://www.rpubs.com/ndphillips/rpackagescience">Link</a>
+Phillips, N. (2016). Creating R packages for research documentation. Early career judgment and decision making workshop, Basel, Switzerland. <a href="http://www.rpubs.com/ndphillips/rpackagescience">HTML</a>
 
 # Recent Presentations
 
-Phillips, N. (2017). ShinyPsych: Writing psychology experiments with R and Shiny. Research Colloquium, Basel, Switzerland <a href="https://ndphillips.github.io/ShinyPsych_March2017">HTML Presentation Link</a>
+Phillips, N. (2017). ShinyPsych: Writing psychology experiments with R and Shiny. Research Colloquium, Basel, Switzerland <a href="https://ndphillips.github.io/ShinyPsych_March2017">HTML</a>
 
-Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2017). FFTrees: An R package to create and visualise fast and frugal decision trees. BaselR, Basel, Switzerland <a href="http://ndphillips.github.io/BaselR">HTML Presentation Link</a>
+Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2017). FFTrees: An R package to create and visualise fast and frugal decision trees. BaselR, Basel, Switzerland <a href="http://ndphillips.github.io/BaselR">HTML</a>
 
 Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2016). FFTrees: An R package to create and visualise fast and frugal decision trees. Annual meeting of the society for Judgment and Decision Making, Boston, MA. <a href="http://ndphillips.github.io/media/phillips2016BostonFFTrees.pdf">PDF</a>
 
