@@ -8,6 +8,36 @@ bibliography: homepage.bib
 knitr::include_graphics("media/brooklyn (1 of 1)-3.jpg")
 ```
 
+
+Here is my visual resume built using my `VisualResume` R package (see [Visual Resume R Package](VisualResume.html)).
+
+```{r, fig.width = 13, fig.height = 10, echo = FALSE}
+VisualResume::VisualResume(
+  titles.left = c("Nathaniel D. Phillips, PhD.", "Data, Decision Science, and R piratery", "*Built with love in R using the VisualResume package"),
+  titles.right = c("ndphillips.github.io", "Nathaniel.D.Phillips.is@gmail.com", ""),
+  timeline.labels = c("Education", "Teaching / Work"),
+  timeline = data.frame(title = c("Grinnell College", "Ohio U", "U of Basel", "MPIB", "U of Konstanz", "U of Basel", "Musician's Friend", "Statistics", "Research Methods", "Information Search", "R", "R", "R", "R", "Data Analyst"),
+                   sub = c("BA. Student", "MS. Student", "PhD. Student", "PhD. Researcher", "PostDoc", "PostDoc", "Statistician", "OhioU", "OhioU", "Konstanz", "Konstanz", "Konstanz", "Basel", "Basel", "Roche"),
+                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1, 2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7, 2017.2),
+                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2018, 2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2018, 2017.8),
+                   side = c(1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)),
+  milestones = data.frame(title = c("BA Math", "MS Psych", "Ph.D Psych"),
+                          sub = c("2005", "2010", "2014"),
+                          year = c(2005.5, 2010.9, 2014.5)),
+  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
+                      title = c("Phillips (in prep). YaRrr! The Pirate's Guide to R.\nSelf-published e-book.",
+                                "Hintze et al. (2015). The Janus face of Darwinian competition.\nScientific Reports, 5.",
+                                "Phillips et al. (2014). Rivals in the Dark: How competition influences [...].\nCognition, 113(1), 104-119.",
+                                "Gonzalez-Vallejo et al. (2013). Early positive information impacts final [...].\nJournal of Behavioral Decision Making, 27.",
+                                "Gonzalez-Vallejo & Phillips, N. D. (2012). Predicting soccer matches [...].\nJudgment and Decision Making. 5(3). 200-206.")),
+  interests = list("programming" = c(rep("R", 20), rep("Python", 1), rep("JavaScript", 2), rep("STAN", 5)),
+                   "statistics" = c(rep("Dec. Trees", 10), rep("Bayesian", 5), rep("Regression", 3)),
+                   "research" = c(rep("Search", 10), rep("Dec Making", 5), rep("Competition", 3), rep("Learning", 8))),
+  col = "xmen",
+  trans = .6)
+```
+
+
 #### Education
 
 My educational background is in mathematical statistics and experimental psychology with an emphasis on cognition and decision-making. I obtained a B.A. in Mathematics from Grinnell College, a M.S. in Experimental Psychology from Ohio University, and a PhD in Experimental Psychology from the University of Basel.
@@ -43,36 +73,6 @@ I have tought courses and supervised theses in judgment and decision making, res
 
 Here are some of my other relevant pages: [Research Gate](https://www.researchgate.net/profile/Nathaniel_Phillips2), [Google Scholar](http://scholar.google.com/citations?user=S-OOdSIAAAAJ), [LinkedIn](https://www.linkedin.com/in/nathanieldphillips).
 
-
-# CV
-
-Here is my visual resume built using my `VisualResume` R package (see [Visual Resume R Package](VisualResume.html)).
-
-```{r, fig.width = 13, fig.height = 10, echo = FALSE}
-VisualResume::VisualResume(
-  titles.left = c("Nathaniel D. Phillips, PhD.", "Data, Decision Science, and R piratery", "*Built with love in R using the VisualResume package"),
-  titles.right = c("ndphillips.github.io", "Nathaniel.D.Phillips.is@gmail.com", ""),
-  timeline.labels = c("Education", "Teaching / Work"),
-  timeline = data.frame(title = c("Grinnell College", "Ohio U", "U of Basel", "MPIB", "U of Konstanz", "U of Basel", "Musician's Friend", "Statistics", "Research Methods", "Information Search", "R", "R", "R", "R", "Data Analyst"),
-                   sub = c("BA. Student", "MS. Student", "PhD. Student", "PhD. Researcher", "PostDoc", "PostDoc", "Statistician", "OhioU", "OhioU", "Konstanz", "Konstanz", "Konstanz", "Basel", "Basel", "Roche"),
-                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1, 2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7, 2017.2),
-                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2018, 2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2018, 2017.8),
-                   side = c(1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0)),
-  milestones = data.frame(title = c("BA Math", "MS Psych", "Ph.D Psych"),
-                          sub = c("2005", "2010", "2014"),
-                          year = c(2005.5, 2010.9, 2014.5)),
-  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
-                      title = c("Phillips (in prep). YaRrr! The Pirate's Guide to R.\nSelf-published e-book.",
-                                "Hintze et al. (2015). The Janus face of Darwinian competition.\nScientific Reports, 5.",
-                                "Phillips et al. (2014). Rivals in the Dark: How competition influences [...].\nCognition, 113(1), 104-119.",
-                                "Gonzalez-Vallejo et al. (2013). Early positive information impacts final [...].\nJournal of Behavioral Decision Making, 27.",
-                                "Gonzalez-Vallejo & Phillips, N. D. (2012). Predicting soccer matches [...].\nJudgment and Decision Making. 5(3). 200-206.")),
-  interests = list("programming" = c(rep("R", 20), rep("Python", 1), rep("JavaScript", 2), rep("STAN", 5)),
-                   "statistics" = c(rep("Dec. Trees", 10), rep("Bayesian", 5), rep("Regression", 3)),
-                   "research" = c(rep("Search", 10), rep("Dec Making", 5), rep("Competition", 3), rep("Learning", 8))),
-  col = "xmen",
-  trans = .6)
-```
 
 
 # Resume
