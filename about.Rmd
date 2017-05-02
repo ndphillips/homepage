@@ -105,6 +105,8 @@ Phillips, N. (2016). Creating R packages for research documentation. Early caree
 
 # Recent Presentations
 
+Phillips, N. (2017). FFTrees: Creating, visualizing, and implementing fast and frugal decision trees. PWC, Zuerich, Switzerland <a href="https://ndphillips.github.io/ZurichPWC28April2017/">HTML</a>
+
 Phillips, N. (2017). Simplify your life with R: From documenting and sharing data to modeling simple decision strategies. Department of Economics, Zuerich, Switzerland  <a href="https://ndphillips.github.io/UZurich-6April2017/">HTML</a>
 
 Phillips, N. (2017). ShinyPsych: Writing psychology experiments with R and Shiny. Research Colloquium, Basel, Switzerland <a href="https://ndphillips.github.io/ShinyPsych_March2017">HTML</a>
