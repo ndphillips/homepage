@@ -39,7 +39,7 @@ You can download my resume and CV with the following links:
 
 # Publications
 
-Phillips, N. D., Neth, H., Woike, J., & Gaissmaier W. (*under review*). FFTrees: An R package to create, visualise, and use fast and frugal decision trees.
+Phillips, N. D., Neth, H., Woike, J., & Gaissmaier W. (*in press*). FFTrees: An R package to create, visualise, and use fast and frugal decision trees. *Judgment and Decision Making*.
 
 Phillips, N. (2017). YaRrr! The pirate's guide to R. <em>APS Observer, 30.3</em>. <a href="http://ndphillips.github.io/media/phillipsyarrr2017">PDF</a>
 
