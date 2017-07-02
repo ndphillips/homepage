@@ -6,6 +6,18 @@ title: "Nathaniel D. Phillips, PhD."
 knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 ```
 
+## Latest News!
+
+### July
+
+- 2 July, 2017: In September I will be co-organizing an intensive 4 day workshop on R called *The R Bootcamp* in Basel with my long-time colleague [Dr. Dirk Wulff](https://dwulff.github.io/). The purpose of the course is to give people with little to no R experience all the tools they need to start their R journey. Cost and registration information is available at our website [www.rbootcamp.com](https://therbootcamp.github.io/)
+
+- 2 July, 2017: This week at the [useR!](https://user2017.brussels/) conference in Brussels I will be giving a talk on my package FFTrees that makes it easy for anyone to create, visualize and evaluate fast-and-frugal decision trees. Check out [this link](https://user2017.sched.com/event/AxqK/fftrees-an-r-package-to-create-visualise-and-use-fast-and-frugal-decision-trees) to see the abstract.
+
+- 1 July, 2017. I am happy to announce that our paper titled *FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees* has been accepted and is currently in press at the journal of [Judgment and Decision Making](http://www.sjdm.org/journal)! I will post a link to the final draft of the paper as soon as it is available (probably in mid-July).
+
+### Welcome!
+
 
 You have reached the personal webpage of Nathaniel Phillips. If you're looking to learn about my approach to statistical programming with R, decision making research, and open science, you're in the right place!
 
