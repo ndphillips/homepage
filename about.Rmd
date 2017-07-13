@@ -69,7 +69,7 @@ Phillips, N. (2016). Creating R packages for research documentation. Early caree
 
 # Recent Presentations
 
-Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2017). FFTrees: An R package to create, visualize and evaluate fast and frugal decision trees. useR!, Brussels, Belgium <a href="https://ndphillips.github.io/useR2017_pres/">Slides</a>, <a href="https://user2017.brussels/livestream">Video (starts around 3:35)</a>
+Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2017). FFTrees: An R package to create, visualize and evaluate fast and frugal decision trees. useR!, Brussels, Belgium <a href="https://ndphillips.github.io/useR2017_pres/">Slides</a>, <a href="https://channel9.msdn.com/events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/FFTrees-An-R-package-to-create-visualise-and-use-fast-and-frugal-decision-trees?term=fftrees">Video</a>
 
 Phillips, N. (2017). FFTrees: Creating, visualizing, and implementing fast and frugal decision trees. PWC, Zuerich, Switzerland <a href="https://ndphillips.github.io/ZurichPWC28April2017/">Slides</a>
 
