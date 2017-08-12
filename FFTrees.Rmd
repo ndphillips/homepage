@@ -28,4 +28,13 @@ plot(heart.fft,                                     # FFTrees object
      data = "test")                                 # Show statistics for test data
 ```
 
+## ShinyFFTrees
+
+- [ShinyFFTrees Link](https://econpsychbasel.shinyapps.io/ShinyFFTrees/)
+
+Through the magic of the internet (and the amazing Shiny framework), you can even play around with FFTrees entirely in a web-browser. Either click the link above, or play around in the window below:
+
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyFFTrees/", height = 500px, width = 900px, align = middle></iframe>
+
+
 # References
