@@ -8,6 +8,13 @@ knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 
 ## Latest News!
 
+
+### August
+
+- [Blog Post](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/): New blog post on three updates to the FFTrees universe [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
+
+- [ShinyFFTrees Link](https://econpsychbasel.shinyapps.io/shinyfftrees/): I am happy to announce a Shiny version of FFTrees called [ShinyFFTrees](https://econpsychbasel.shinyapps.io/shinyfftrees/). ShinyFFTrees allows you to use almost all of the functionality of the FFTrees package entirely in a web-browser. You can even upload and model your own data.
+
 ### July
 
 - In September I will be co-organizing an intensive 4 day workshop on R called *The R Bootcamp* in Basel with my long-time colleague [Dr. Dirk Wulff](https://dwulff.github.io/). The purpose of the course is to give people with little to no R experience all the tools they need to start their R journey. Cost and registration information is available at our website [www.rbootcamp.com](https://therbootcamp.github.io/)
