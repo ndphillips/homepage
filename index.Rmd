@@ -6,13 +6,6 @@ title: "Nathaniel D. Phillips, PhD."
 knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 ```
 
-### August 2017
-
-- [12 August Blog Post](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/): New blog post on three updates to the FFTrees universe [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
-
-- [ShinyFFTrees Link](https://econpsychbasel.shinyapps.io/shinyfftrees/): I am happy to announce a Shiny version of FFTrees called [ShinyFFTrees](https://econpsychbasel.shinyapps.io/shinyfftrees/). ShinyFFTrees allows you to use almost all of the functionality of the FFTrees package entirely in a web-browser. You can even upload and model your own data.
-
-- [Manuscript PDF Link](http://journal.sjdm.org/17/17217/jdm17217.pdf). Our FFTrees manuscript titled *FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees* is live at the Society for Judgment and Decision Making Journal webpage.
 
 ### Welcome!
 
@@ -23,6 +16,19 @@ I am a currently post-doctoral researcher in the department of [Economic Psychol
 To learn more about [me](about.html), my book [YaRrr! The Pirate's Guide to R](piratesguide.html), [tutorials](tutorials.html), [R packages](packages.html), or to check out my [blog](https://ndphillips.github.io/blog/), click one of the buttons in the Navigation bar.
 
 You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">send me an email</a>.
+
+### September 2017
+
+- [First BaselRBootcamp](www.therbootcamp.com): Over the course of two weekends (9, 10, 16, 17) in September, Dr. Dirk Wulff and I hosted our first BaselRBootcamp, a 4 day intensive R course for academics and industry professionals. The bootcamp was a huge success and we look forward hosting the next bootcamp in January of 2018. Registration will be available soon at http://www.therbootcamp.com.
+
+
+### August 2017
+
+- [12 August Blog Post](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/): New blog post on three updates to the FFTrees universe [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
+
+- [ShinyFFTrees Link](https://econpsychbasel.shinyapps.io/shinyfftrees/): I am happy to announce a Shiny version of FFTrees called [ShinyFFTrees](https://econpsychbasel.shinyapps.io/shinyfftrees/). ShinyFFTrees allows you to use almost all of the functionality of the FFTrees package entirely in a web-browser. You can even upload and model your own data.
+
+- [FFTrees JDM Publication](http://journal.sjdm.org/17/17217/jdm17217.pdf). Our FFTrees manuscript titled *FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees* is live at the Society for Judgment and Decision Making Journal webpage.
 
 
 ## Older News
