@@ -6,9 +6,7 @@ title: "Nathaniel D. Phillips, PhD."
 knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 ```
 
-## Latest News!
-
-### August
+### August 2017
 
 - [12 August Blog Post](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/): New blog post on three updates to the FFTrees universe [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
 
@@ -30,7 +28,7 @@ You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">se
 ## Older News
 
 
-### July
+### July 2017
 
 - In September I will be co-organizing an intensive 4 day workshop on R called *The R Bootcamp* in Basel with my long-time colleague [Dr. Dirk Wulff](https://dwulff.github.io/). The purpose of the course is to give people with little to no R experience all the tools they need to start their R journey. Cost and registration information is available at our website [www.rbootcamp.com](https://therbootcamp.github.io/)
 
