@@ -8,25 +8,28 @@ The `FFTrees` package creates fast and frugal decision trees (FFTs). Fast and fr
 The purpose of `FFTrees` is to allow anyone to quickly and easily generate, visualise, and use FFTs for their own data.
 
 ```{r eval = FALSE}
+# Install FFTrees from CRAN (only necessary once)
 install.packages("FFTrees")
-# devtools::install_github("ndphillips/FFTrees", build_vignettes = TRUE) # developer version
 ```
 
 
 
-```{r, fig.width = 8, fig.height = 7, message = FALSE, warning = FALSE}
+```{r, fig.width = 7, fig.height = 6.5, message = FALSE, warning = FALSE}
 library(FFTrees)
 
-set.seed(100) # For cross validation replication
-heart.fft <- FFTrees(formula = diagnosis ~.,        # formula
-                     data = heartdisease,           # dataframe
-                     train.p = .5)                  # cross validation split
+heart.fft <- FFTrees(formula = diagnosis ~.,        # Criterion
+                     data = heart.train,            # Training data   
+                     data.test = heart.test)        # Testing data
 
 plot(heart.fft,                                     # FFTrees object
      main = "Heart Disease",                        # Plot title
      decision.names = c("Healthy", "Diseased"),     # Decision names
      data = "test")                                 # Show statistics for test data
 ```
+
+## Manuscript
+
+You can read more about the FFTrees package in our accompanying manuscript [FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees](http://journal.sjdm.org/17/17217/jdm17217.pdf) [@phillips2017fftrees], co-authored with [Hansjörg Neth](https://www.spds.uni-konstanz.de/hans-neth), [Jan Woike](https://www.mpib-berlin.mpg.de/en/staff/jan-k-woike) and [Wolfgang Gaissmaier](https://www.spds.uni-konstanz.de/wolfgang-gaissmaier)
 
 ## ShinyFFTrees
 

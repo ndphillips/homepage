@@ -8,7 +8,6 @@ knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 
 ## Latest News!
 
-
 ### August
 
 - [12 August Blog Post](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/): New blog post on three updates to the FFTrees universe [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
@@ -16,6 +15,20 @@ knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 - [ShinyFFTrees Link](https://econpsychbasel.shinyapps.io/shinyfftrees/): I am happy to announce a Shiny version of FFTrees called [ShinyFFTrees](https://econpsychbasel.shinyapps.io/shinyfftrees/). ShinyFFTrees allows you to use almost all of the functionality of the FFTrees package entirely in a web-browser. You can even upload and model your own data.
 
 - [Manuscript PDF Link](http://journal.sjdm.org/17/17217/jdm17217.pdf). Our FFTrees manuscript titled *FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees* is live at the Society for Judgment and Decision Making Journal webpage.
+
+### Welcome!
+
+You have reached the personal webpage of Nathaniel Phillips. If you're looking to learn about my approach to statistical programming with R, decision making research, and open science, you're in the right place!
+
+I am a currently post-doctoral researcher in the department of [Economic Psychology](https://psycho.unibas.ch/en/centers/abteilung-details/home/abteilung/economic-psychology/) at the University of Basel.
+
+To learn more about [me](about.html), my book [YaRrr! The Pirate's Guide to R](piratesguide.html), [tutorials](tutorials.html), [R packages](packages.html), or to check out my [blog](https://ndphillips.github.io/blog/), click one of the buttons in the Navigation bar.
+
+You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">send me an email</a>.
+
+
+## Older News
+
 
 ### July
 
@@ -25,16 +38,6 @@ knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 
 - I am happy to announce that our paper titled *FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees* has been accepted and is currently in press at the journal of [Judgment and Decision Making](http://www.sjdm.org/journal)! I will post a link to the final draft of the paper as soon as it is available (probably in mid-July).
 
-### Welcome!
-
-
-You have reached the personal webpage of Nathaniel Phillips. If you're looking to learn about my approach to statistical programming with R, decision making research, and open science, you're in the right place!
-
-I am a currently post-doctoral researcher in the department of [Economic Psychology](https://psycho.unibas.ch/en/centers/abteilung-details/home/abteilung/economic-psychology/) at the University of Basel.
-
-To learn more about [me](about.html), my book [YaRrr! The Pirate's Guide to R](piratesguide.html), [tutorials](tutorials.html), [R packages](packages.html), or to check out my [blog](https://ndphillips.github.io/blog/), click one of the buttons in the Navigation bar.
-
-You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">send me an email</a>.
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

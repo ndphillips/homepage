@@ -306,20 +306,23 @@ $(document).ready(function () {
 
 <p>The <code>FFTrees</code> package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are very simple <a href="https://en.wikipedia.org/wiki/Heuristic">heuristics</a> decision algorithms that, in contrast to regression and more complex algorithms such as <a href="https://en.wikipedia.org/wiki/Random_forest">random forests</a> and (non-frugal) <a href="https://en.wikipedia.org/wiki/Decision_tree">decision trees</a>, allow people to make fast decisions based on minimal information. FFTs are not just easy to use, they can also predict data as well, if not better, than more complex algorithms such as regression <span class="citation">(Gigerenzer and Todd 1999; Martignon, Katsikopoulos, and Woike 2008)</span>. Because they are so effective and easy to use and, fast and frugal trees have been used to improve decision making in medical <span class="citation">(Green and Mehr 1997; Jenny et al. 2013)</span> and financial <span class="citation">(Neth et al. 2014)</span> contexts.</p>
 <p>The purpose of <code>FFTrees</code> is to allow anyone to quickly and easily generate, visualise, and use FFTs for their own data.</p>
-<pre class="r"><code>install.packages(&quot;FFTrees&quot;)
-# devtools::install_github(&quot;ndphillips/FFTrees&quot;, build_vignettes = TRUE) # developer version</code></pre>
+<pre class="r"><code># Install FFTrees from CRAN (only necessary once)
+install.packages(&quot;FFTrees&quot;)</code></pre>
 <pre class="r"><code>library(FFTrees)
 
-set.seed(100) # For cross validation replication
-heart.fft &lt;- FFTrees(formula = diagnosis ~.,        # formula
-                     data = heartdisease,           # dataframe
-                     train.p = .5)                  # cross validation split
+heart.fft &lt;- FFTrees(formula = diagnosis ~.,        # Criterion
+                     data = heart.train,            # Training data   
+                     data.test = heart.test)        # Testing data
 
 plot(heart.fft,                                     # FFTrees object
      main = &quot;Heart Disease&quot;,                        # Plot title
      decision.names = c(&quot;Healthy&quot;, &quot;Diseased&quot;),     # Decision names
      data = &quot;test&quot;)                                 # Show statistics for test data</code></pre>
-<p><img src="FFTrees_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<p><img src="FFTrees_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<div id="manuscript" class="section level2">
+<h2>Manuscript</h2>
+<p>You can read more about the FFTrees package in our accompanying manuscript <a href="http://journal.sjdm.org/17/17217/jdm17217.pdf">FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees</a> <span class="citation">(Phillips et al. 2017)</span>, co-authored with <a href="https://www.spds.uni-konstanz.de/hans-neth">Hansjörg Neth</a>, <a href="https://www.mpib-berlin.mpg.de/en/staff/jan-k-woike">Jan Woike</a> and <a href="https://www.spds.uni-konstanz.de/wolfgang-gaissmaier">Wolfgang Gaissmaier</a></p>
+</div>
 <div id="shinyfftrees" class="section level2">
 <h2>ShinyFFTrees</h2>
 <ul>
@@ -346,6 +349,9 @@ plot(heart.fft,                                     # FFTrees object
 </div>
 <div id="ref-neth2014homo">
 <p>Neth, Hansjörg, Björn Meder, Amit Kothiyal, and Gerd Gigerenzer. 2014. “Homo Heuristicus in the Financial World: From Risk Management to Managing Uncertainty.” <em>Journal of Risk Management in Financial Institutions</em> 7 (2). Henry Stewart Publications: 134–44.</p>
+</div>
+<div id="ref-phillips2017fftrees">
+<p>Phillips, Nathaniel D, Hansjörg Neth, Jan K Woike, Wolfgang Gaissmaier, and others. 2017. “FFTrees: A Toolbox to Create, Visualize, and Evaluate Fast-and-Frugal Decision Trees.” <em>Judgment and Decision Making</em> 12 (4). Society for Judgment; Decision Making: 344–68.</p>
 </div>
 </div>
 </div>
