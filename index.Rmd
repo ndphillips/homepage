@@ -6,7 +6,6 @@ title: "Nathaniel D. Phillips, PhD."
 knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 ```
 
-
 ### Welcome!
 
 You have reached the personal webpage of Nathaniel Phillips. If you're looking to learn about my approach to statistical programming with R, decision making research, and open science, you're in the right place!
@@ -19,7 +18,7 @@ You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">se
 
 ### September 2017
 
-- [First BaselRBootcamp](www.therbootcamp.com): Over the course of two weekends (9, 10, 16, 17) in September, Dr. Dirk Wulff and I hosted our first BaselRBootcamp, a 4 day intensive R course for academics and industry professionals. The bootcamp was a huge success and we look forward hosting the next bootcamp in January of 2018. Registration will be available soon at http://www.therbootcamp.com.
+- [First BaselRBootcamp](www.therbootcamp.com): Over the course of two weekends (9, 10, 16, 17) in September, Dr. Dirk Wulff and I hosted our first BaselRBootcamp, a 4 day intensive R course. We had 11 bootcampers coming from both academia and industry, one of whom came all the way from Chile! The bootcamp was a huge success and we look forward hosting the next bootcamp in January of 2018. Registration will be available soon at http://www.therbootcamp.com.
 
 
 ### August 2017
