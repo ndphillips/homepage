@@ -7,9 +7,6 @@ navbar:
     - text: " About"
       icon: fa-user 
       href: about.html
-    - text: "Research"
-      icon: fa-leaf
-      href: research.html
     - text: "R Packages"
       icon: fa-dropbox
       menu:
