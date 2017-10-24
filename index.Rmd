@@ -22,9 +22,6 @@ You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">se
 
 - [Presentation: INFORMS 2017](https://ndphillips.github.io/Informs2017/#1). On 24 October I had the pleasure of chairing a session titled [Simplicity versus Complexity in forecasting and prediction](http://www.abstractsonline.com/pp8/#!/4471/session/963) at the 2017 INFORMS operations research conference in Houston TX. This was really an amazing session as I was joined by an all-star team of reseachers: [Florian Artinger](https://www.mpib-berlin.mpg.de/en/staff/florian-artinger) from the Max Planck Institute for Human Development and Simply Rational, [Dan Goldstein](http://www.dangoldstein.com/) from Microsoft Research and former president of the Society for Judgment and Decision Making and [Pantelis Pipergias-Analytis](http://infosci.cornell.edu/forward-thinking-people/research-staff/pantelis-pipergias-analytis) from Cornell. Funnily enough, 3 of the 4 of us independently presented simulation results comparing the accuracy of simple to complex algorithms using datasets from the UCI machine learning inventory (If that's not convergent validity for a method then I don't know what is!). You can view the abstracts from our session [here](http://www.abstractsonline.com/pp8/#!/4471/session/963), and the slides to my talk on creating fast-and-frugal trees with my FFTrees R package [here](https://ndphillips.github.io/Informs2017/#1).
 
-
-## Older News
-
 ### September 2017
 
 - [First BaselRBootcamp](www.therbootcamp.com): Over the course of two weekends (9, 10, 16, 17) in September, Dr. Dirk Wulff and I hosted our first BaselRBootcamp, a 4 day intensive R course. We had 11 bootcampers coming from both academia and industry, one of whom came all the way from Chile! The bootcamp was a huge success and we look forward hosting the next bootcamp in January of 2018. Registration will be available soon at http://www.therbootcamp.com.
