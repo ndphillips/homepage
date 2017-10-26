@@ -8,13 +8,13 @@ knitr::include_graphics("media/brooklyn (1 of 1)-2.jpg")
 
 # *[Hellooooooo](https://www.youtube.com/watch?v=bjmgzLVuWLU)*
 
-You have reached the personal webpage of Nathaniel Phillips. If you're looking to learn about my approach to statistical programming with R, decision making research, and open science, you're in the right place!
-
-I am a currently post-doctoral researcher in the department of [Economic Psychology](https://psycho.unibas.ch/en/centers/abteilung-details/home/abteilung/economic-psychology/) at the University of Basel. Here are links (updated October, 2017) for my <a href="media/Phillips_Resume_Oct2017.pdf#" class="download" title="Download resume as PDF (Updated October, 2017)">Resume</a> and  <a href="media/Phillips_CV_Oct2017.pdf#" class="download" title="Download CV as PDF (Updated October, 2017)">CV</a>.
+You have reached the personal webpage of Nathaniel Phillips. I am a currently completing a post-doctoral researcher position in the department of [Economic Psychology](https://psycho.unibas.ch/en/centers/abteilung-details/home/abteilung/economic-psychology/) at the University of Basel. If you're looking to learn about my approach to statistical programming with R, decision making research, and open science, you're in the right place!
 
 To learn more about [me](about.html), my book [YaRrr! The Pirate's Guide to R](piratesguide.html), [tutorials](tutorials.html), [R packages](packages.html), or to check out my [blog](https://ndphillips.github.io/blog/), click one of the buttons in the Navigation bar.
 
-You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">send me an email</a>.
+### On the job market!
+
+I am currently on the job market for a new research position with a focus on decision and data science. Here are links (updated October, 2017) for my <a href="media/Phillips_Resume_Oct2017.pdf#" class="download" title="Download resume as PDF (Updated October, 2017)">Resume</a> and  <a href="media/Phillips_CV_Oct2017.pdf#" class="download" title="Download CV as PDF (Updated October, 2017)">CV</a>. You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">send me an email</a>.
 
 # Latest News
 
