@@ -16,7 +16,7 @@ To learn more about [me](about.html), my book [YaRrr! The Pirate's Guide to R](p
 
 I am currently on the job market for a new research position with a focus on decision and data science. Here are links (updated October, 2017) for my <a href="media/Phillips_Resume_Oct2017.pdf#" class="download" title="Download resume as PDF (Updated October, 2017)">Resume</a> and  <a href="media/Phillips_CV_Oct2017.pdf#" class="download" title="Download CV as PDF (Updated October, 2017)">CV</a>. You can also <a href="mailto:nathaniel.d.phillips.is@gmail.com" target="_top">send me an email</a>.
 
-# Latest News
+# News
 
 ### October 2017
 
