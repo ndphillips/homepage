@@ -29,7 +29,7 @@ I am currently on the job market for a research position with a focus on decisio
 
 - [12 August Blog Post](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/): New blog post on three updates to the FFTrees universe [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
 
-- [ShinyFFTrees Link](https://econpsychbasel.shinyapps.io/shinyfftrees/): I am happy to announce a Shiny version of FFTrees called [ShinyFFTrees](https://econpsychbasel.shinyapps.io/shinyfftrees/). ShinyFFTrees allows you to use almost all of the functionality of the FFTrees package entirely in a web-browser. You can even upload and model your own data.
+- [www.shinyfftrees.org](https://econpsychbasel.shinyapps.io/shinyfftrees/): I am happy to announce a Shiny version of FFTrees called [ShinyFFTrees](https://econpsychbasel.shinyapps.io/shinyfftrees/) available at [www.shinyfftrees.org](https://econpsychbasel.shinyapps.io/shinyfftrees/). ShinyFFTrees allows you to use almost all of the functionality of the FFTrees package entirely in a web-browser. You can even upload and model your own data.
 
 - [FFTrees JDM Publication](http://journal.sjdm.org/17/17217/jdm17217.pdf). Our FFTrees manuscript titled *FFTrees: A toolbox to create, visualize, and evaluate fast-and-frugal decision trees* is live at the Society for Judgment and Decision Making Journal webpage.
 
