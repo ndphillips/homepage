@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,10 +31,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -336,7 +338,7 @@ $(document).ready(function () {
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="NWE3NP9LHDQ6J" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-34px.png" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
 </form>
-<p>I am a huge proponent of open source software (like R) and open science. So a version of this book will always be freely available! That said translating and updating the book takes quite a bit of time. So if you like the book, and want to see it get even better with more pirate-speak and terrible jokes, consider throwing some gold my way by clicking the donation button!</p>
+<p>I am a huge proponent of open source software (like R) and open science. So a version of this book will always be freely available! That said translating and updating the book takes quite a bit of time. So if you like the book, and want to see it get even better with more pirate-speak and terrible jokes, consider throwing some gold my way by clicking the donation button or go to <a href="paypal.me/ThePiratesGuideToR" class="uri">paypal.me/ThePiratesGuideToR</a>!</p>
 </div>
 
 
