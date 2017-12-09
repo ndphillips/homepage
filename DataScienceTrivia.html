@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Compiled by Nathaniel Phillips (http://ndphillips.github.io)" />
+
+
+<title>Data Science Trivia</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Nathaniel D. Phillips</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">
+    <span class="fa fa-user"></span>
+     
+     About
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-dropbox"></span>
+     
+    R Packages
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="packages.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="yarrr.html">yarrr</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="FFTrees.html">FFTrees</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="VisualResume.html">VisualResume</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-users"></span>
+     
+    ShinyPsych
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="ShinyPsych.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="ShinyBandit.html">ShinyBandit</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="ShinyBART.html">ShinyBART</a>
+    </li>
+    <li class="divider"></li>
+  </ul>
+</li>
+<li>
+  <a href="piratesguide.html">
+    <span class="fa fa-book"></span>
+     
+    YaRrr!
+  </a>
+</li>
+<li>
+  <a href="tutorials.html">
+    <span class="fa fa-graduation-cap"></span>
+     
+    Tutorials
+  </a>
+</li>
+<li>
+  <a href="https://ndphillips.github.io/blog/">
+    <span class="fa fa-rss"></span>
+     
+    Blog
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:Nathaniel.D.Phillips.is@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+    Email
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ndphillips">
+    <span class="fa fa-github"></span>
+     
+    
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/nathanieldphillips">
+    <span class="fa fa-linkedin"></span>
+     
+    
+  </a>
+</li>
+<li>
+  <a href="https://www.twitter.com/YaRrrBook">
+    <span class="fa fa-twitter"></span>
+     
+    
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Data Science Trivia</h1>
+<h4 class="author"><em>Compiled by Nathaniel Phillips (<a href="http://ndphillips.github.io" class="uri">http://ndphillips.github.io</a>)</em></h4>
+<h4 class="date"><em>12/9/2017</em></h4>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<ul>
+<li>These questions were originally compiled by Nathaniel Phillips for the Basel Data Scientists (BDS) meetup group as a trivia competition between small groups.</li>
+<li>Send comments / suggestions to me at <a href="mailto:Nathaniel.D.Phillips.is@gmail.com">Nathaniel.D.Phillips.is@gmail.com</a>.</li>
+<li>See <a href="ndphillips.github.io/DataScienceTrivia_Answers.html" class="uri">ndphillips.github.io/DataScienceTrivia_Answers.html</a> for the Answers!</li>
+</ul>
+</div>
+<div id="data-science-trivia-questions" class="section level2">
+<h2>20 Data Science Trivia Questions</h2>
+<div id="fun" class="section level3">
+<h3>Fun</h3>
+<ol style="list-style-type: decimal">
+<li><p>Abraham is tasked with reviewing damaged planes coming back from sorties over Germany in the Second World War. He has to review the damage of the planes to see which areas must be protected even more. Abraham finds that the fuel system of returned planes are much more likely to be damaged by bullets than the engines. Which part of the plan should he recommend to receive additional protection, the fuel systems or the engines? </p></li>
+<li><p>Paul the __ was an animal that became famous in 2010 for accurately predicting the outcomes of the 2010 world cup. What species was paul? </p></li>
+<li><p>Amy and Bob have two children, one of whom is female. What is the probability that their other child is female? </p></li>
+<li><p>Suppose you’re on a game show, and you’re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what’s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, “Do you want to pick door No. 2?” Assuming that you do not want a goat, should you stick with door No 1. or should you switch to door No 2.? </p></li>
+<li><p>Imagine the following coin flipping game. Before the game starts, the pot starts at $2. I then continually flip a coin, and each time a Head appears, the pot doubles. The first time tails appears, the game ends and you win whatever is in the pot. Thus a Tails comes on the first flip, the game is over and you get 2$. If the first Tails comes on the second flip, you get $4. Formally, you win <span class="math inline">\(2^k\)</span> dollars, where k is the number of flips. If you played this game infinitely times, how much money would you expect to earn on average? How much would you pay me for the opportunity to play this game?</p></li>
+</ol>
+
+</div>
+<div id="statistics" class="section level3">
+<h3>Statistics</h3>
+<ol style="list-style-type: decimal">
+<li><p>How many people do you need in a room for the probability to be greater than .50 that at least two people in the room have the same birthday? </p></li>
+<li><p>If you flip a fair coin 4 times, what is the probability that it will have at least one head?</p></li>
+</ol>
+
+<ol start="3" style="list-style-type: decimal">
+<li>Imagine you are a physician presented with the following problem. A 50-year old woman Betty, with no symptoms, participants in routine mammogram screening. She tests positive and wants to know how likely it is that she actually has breast cancer given her positive test result. You know that about 1% of 50-year old women have breast cancer. If a woman <em>does</em> have breast cancer, the probability that she tests positive is 90%. If she <em>does not</em> have breast cancer, the probability that she nevertheless tests positive is 9%. Based on this information, how likely is it that Betty actually has breast cancer given her positive test result?</li>
+</ol>
+
+<ol start="4" style="list-style-type: decimal">
+<li>What is the definition of a p-value?</li>
+</ol>
+
+<ol start="5" style="list-style-type: decimal">
+<li>Imagine that I flipped a fair coin 5 times: which of the following two sequences is more likely to occur? A) “H, H, T, H, T”, B) “T, T, T, T, T” </li>
+</ol>
+
+</div>
+<div id="history" class="section level3">
+<h3>History</h3>
+<ol style="list-style-type: decimal">
+<li>The ___ ___ theorem, one of the most famous in all of statistics, states that, given enough data, the probability distribution of the sample mean will always be Normal, regardless of the probability distribution of the raw data.</li>
+</ol>
+
+<ol start="2" style="list-style-type: decimal">
+<li><p>The mathematician ___ developed the method of least squares in 1809. </p></li>
+<li><p>In 1907, Francis Galton submitted a paper to Nature where he found that when 787 people guessed the weight of an ox at a county fair, the median estimate of the group was only off by 10 pounds. This is one of the most famous examples of the ___ __ ___. </p></li>
+<li><p>The .05 significance threshold was introduced by ___ in 1925. </p></li>
+<li><p>Python is a programming language created by Guido van Rossum and was first released in 1991. Where did the name for Python come from? </p></li>
+</ol>
+
+</div>
+<div id="terminology" class="section level3">
+<h3>Terminology</h3>
+<ol style="list-style-type: decimal">
+<li><p>A machine learning model that is so complex that no one, even at times its programmers, don’t know exactly why it works the way it does, is called a ___ ___ model. </p></li>
+<li><p>When an algorithm has very high accuracy in fitting a training dataset, but poor accuracy in predicting a new dataset, then the model has ___ the training data. </p></li>
+<li><p>In order to computationally estimate probability distributions, especially in Bayesian statistics, MCMC methods are often used, which stand for ___ ___ ___ ___ methods. </p></li>
+<li><p>What does SPSS stand for? </p></li>
+<li><p>Regression, decision trees, and random forests are known as ___ learning algorithms, while algorithms such as nearest neighbor and principle component analysis are known as ___ learning algorithms</p></li>
+</ol>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

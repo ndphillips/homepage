@@ -1,0 +1,95 @@
+---
+title: "Data Science Trivia"
+author: "Compiled by Nathaniel Phillips (http://ndphillips.github.io)"
+date: "12/9/2017"
+output:
+  html_document:
+    df_print: paged
+---
+
+## Introduction
+
+- These questions were originally compiled by Nathaniel Phillips for the Basel Data Scientists (BDS) meetup group as a trivia competition between small groups.
+- Send comments / suggestions to me at Nathaniel.D.Phillips.is@gmail.com.
+- See [ndphillips.github.io/DataScienceTrivia_Answers.html](ndphillips.github.io/DataScienceTrivia_Answers.html) for the Answers!
+
+
+## 20 Data Science Trivia Questions
+
+### Fun
+
+1. Abraham is tasked with reviewing damaged planes coming back from sorties over Germany in the Second World War. He has to review the damage of the planes to see which areas must be protected even more. Abraham finds that the fuel system of returned planes are much more likely to be damaged by bullets than the engines. Which part of the plan should he recommend to receive additional protection, the fuel systems or the engines?
+\vspace{2cm}
+
+2. Paul the __ was an animal that became famous in 2010 for accurately predicting the outcomes of the 2010 world cup. What species was paul?
+\vspace{3cm}
+
+3. Amy and Bob have two children, one of whom is female. What is the probability that their other child is female?
+\vspace{2cm}
+
+4. Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Assuming that you do not want a goat, should you stick with door No 1. or should you switch to door No 2.?
+\vspace{2cm}
+
+5. Imagine the following coin flipping game. Before the game starts, the pot starts at \$2. I then continually flip a coin, and each time a Head appears, the pot doubles. The first time tails appears, the game ends and you win whatever is in the pot. Thus a Tails comes on the first flip, the game is over and you get 2\$. If the first Tails comes on the second flip, you get \$4. Formally, you win $2^k$ dollars, where k is the number of flips. If you played this game infinitely times, how much money would you expect to earn on average? How much would you pay me for the opportunity to play this game? 
+
+\pagebreak
+
+### Statistics
+
+1. How many people do you need in a room for the probability to be greater than .50 that at least two people in the room have the same birthday?
+\vspace{3cm}
+
+2. If you flip a fair coin 4 times, what is the probability that it will have at least one head?
+
+\vspace{3cm}
+
+3. Imagine you are a physician presented with the following problem. A 50-year old woman Betty, with no symptoms, participants in routine mammogram screening. She tests positive and wants to know how likely it is that she actually has breast cancer given her positive test result. You know that about 1\% of 50-year old women have breast cancer. If a woman *does* have breast cancer, the probability that she tests positive is 90\%. If she *does not* have breast cancer, the probability that she nevertheless tests positive is 9\%. Based on this information, how likely is it that Betty actually has breast cancer given her positive test result?
+
+\vspace{3cm}
+
+4. What is the definition of a p-value?
+
+\vspace{3cm}
+
+5. Imagine that I flipped a fair coin 5 times: which of the following two sequences is more likely to occur? A) "H, H, T, H, T", B) "T, T, T, T, T"
+\vspace{3cm}
+
+\pagebreak
+
+### History
+
+1. The \___ \___ theorem, one of the most famous in all of statistics, states that, given enough data, the probability distribution of the sample mean will always be Normal, regardless of the probability distribution of the raw data.
+
+\vspace{3cm}
+
+2. The mathematician \___ developed the method of least squares in 1809.
+\vspace{3cm}
+
+3. In 1907, Francis Galton submitted a paper to Nature where he found that when 787 people guessed the weight of an ox at a county fair, the median estimate of the group was only off by 10 pounds. This is one of the most famous examples of the \___ \__ \___.
+\vspace{3cm}
+
+4. The .05 significance threshold was introduced by \___ in 1925. 
+\vspace{3cm}
+
+5. Python is a programming language created by Guido van Rossum and was first released in 1991. Where did the name for Python come from?
+\vspace{3cm}
+
+\pagebreak
+
+### Terminology
+
+1. A machine learning model that is so complex that no one, even at times its programmers, don't know exactly why it works the way it does, is called a \___ \___ model.
+\vspace{3cm}
+
+2. When an algorithm has very high accuracy in fitting a training dataset, but poor accuracy in predicting a new dataset, then the model has ___ the training data.
+\vspace{3cm}
+
+3. In order to computationally estimate probability distributions, especially in Bayesian statistics, MCMC methods are often used, which stand for \___ \___ \___ \___ methods.
+\vspace{3cm}
+
+4. What does SPSS stand for?
+\vspace{3cm}
+
+5. Regression, decision trees, and random forests are known as \___ learning algorithms, while algorithms such as nearest neighbor and principle component analysis are known as \___ learning algorithms
+
+\vspace{20cm}

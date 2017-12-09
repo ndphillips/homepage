@@ -1,0 +1,237 @@
+---
+title: "Data Science Trivia Answers"
+author: "Compiled by Nathaniel Phillips (http://ndphillips.github.io)"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Introduction
+- These questions were originally compiled by Nathaniel Phillips for the Basel Data Scientists (BDS) meetup group as a trivia competition between small groups.
+- Send comments / suggestions to me at Nathaniel.D.Phillips.is@gmail.com.
+- See [ndphillips.github.io/DataScienceTrivia.html](ndphillips.github.io/DataScienceTrivia.html) for the original form without Answers.
+
+### Fun
+
+1. Abraham is tasked with reviewing damaged planes coming back from sorties over Germany in the Second World War. He has to review the damage of the planes to see which areas must be protected even more. Abraham finds that the fuel system of returned planes are much more likely to be damaged by bullets than the engines. Which part of the plane should he recommend to receive additional protection, the fuel systems or the engines?
+\vspace{.5cm}
+
+The engines! Why? Because the planes whose engines were damaged never came back! This is a classic example of a sampling bias in data.
+
+\vspace{.5cm}
+
+2. Paul the __ was an animal that became famous in 2010 for accurately predicting the outcomes of the 2010 world cup. What species was Paul?
+\vspace{.5cm}
+
+Paul was an Octopus. Check out his Wikipedia page  [https://en.wikipedia.org/wiki/Paul_the_Octopus](https://en.wikipedia.org/wiki/Paul_the_Octopus) to learn more.
+
+\vspace{.5cm}
+
+
+3. Amy and Bob have two children, one of whom is female. What is the probability that their other child is female?
+
+\vspace{.5cm}
+
+Believe it or not, the answer is 1/3! Why? Well, for two children, there are 4 different combinations of gender sequences: 1. Male - Male, 2. Male - Female, 3. Female - Male, 4. Female - Female. If one of the children is female, then the the 1. Male - Male combination is out, leaving the three combinations 2. Male - Female, 3. Female - Male, 4. Female - Female. Of these 3 combinations only one has two females. Therefore, the probability is 1/3!
+
+\vspace{.5cm}
+
+
+4. Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Assuming that you do not want a goat, should you stick with door No 1. or should you switch to door No 2.? Or does it not matter if you stick or switch?
+\vspace{.5cm}
+
+Answer: You should switch! To see why consider the following two possible situations you may find yourself
+
+Situation A: Door No. 1 (your first guess) DOES have the car
+Situation B: Door No. 1 does NOT have the car
+
+If you are in Situation A, then you should NOT switch, and you will get the car for sure. If you are in Situation B, then you SHOULD switch, and you will get the car for sure (because the host would not have removed the door with the car). Now, all you have to ask yourself is, what are the probabilities you're in situations A and B? Well, the probability of situation A is 1/3 (assuming the location of the car was randomly determined), and the probability of situation B is 2/3 (1 - 1/3). Because it's twice as likely that you are in a situation where you should switch, than one where you should not switch, you are better off switching than staying.
+
+If you got this wrong, don't feel bad. This is the famous Monty Hall problem, one of the classic probability brain teasers that, in the 1990s, fooled hundreds of PhD statisticians! See [https://en.wikipedia.org/wiki/Monty_Hall_problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) for more details on this famous problem.
+
+
+
+
+5. Imagine the following coin flipping game. Before the game starts, the pot starts at \$2. I then continually flip a coin, and each time a Head appears, the pot doubles. The first time tails appears, the game ends and you win whatever is in the pot. Thus a Tails comes on the first flip, the game is over and you get 2\$. If the first Tails comes on the second flip, you get \$4. Formally, you win $2^k$ dollars, where k is the number of flips. If you played this game infinitely times, how much money would you expect to earn on average? How much would you pay me for the opportunity to play this game? 
+
+
+If you played this game infinitely many times, you'd earn an infinite amount of money! To see why, calculate the expected value of the game as follows: there is a 1/2 chance that the tail comes on the first flip, giving you \$2. There is a 1/4 chance that the first tail comes on the second flip, giving you \$4. There is a 1/8 chance that the first tail comes on the third flip, giving you \$8. Thus, the expected value of the game is equal to:
+
+$$
+\frac{1}{2} \times 2 + \frac{1}{4} \times 4 + \frac{1}{8} \times 8 + ... = 1 + 1 + 1 + ... = \infty
+$$
+
+
+The amount of money you'd be willing to play this game, of course, has no right or wrong answer. In fact, despite the fact that the expected value of the game is infinite, most people would be unwilling to spend more than \$10 on this game. This finding is known as the St. Petersburg paradox. Economists and decision scientists will know this problem well as it was 'solved' by Daniel Bernoulli's idea in the early 1700s that the utility (value) of money is not equal to its raw monetary value, but rather is a monotonically decreasing function of the raw value. In other words, the relative benefit of earning \$100 relative to \$50 is much higher than the relative benefit of earning \$10,000 to \$9,500. When this is the case, and depending on the player's initial wealth, the value of the game can be less than \$10. See the [St. Petersburg Paradox Wikipedia page](https://en.wikipedia.org/wiki/St._Petersburg_paradox) for more info.
+
+
+
+\pagebreak
+
+### Statistics
+
+1. If you flip a fair coin 4 times, what is the probability that it will have at least one head?
+
+\vspace{.5cm}
+
+Answer: 15/16. To calculate this calculate the probability that all 4 flips will be tails, then take the compliment. The probability that all 4 flips will be Tails is $\frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} = 1/16$. Therefore, the probability of getting at least one head is $1 - \frac{1}{16} = \frac{15}{16}$
+
+
+
+2. How many people do you need in a room for the probability to be greater than .50 that at least two people in the room have the same birthday?
+\vspace{.5cm}
+
+Aaaaa, the birthday problem. Who doesn't love the birthday problem? The best way to solve this is to remember the answer from the last time you heard it. If you can't remember, or worse yet, haven't heard it before, you're in trouble, because the answer is much lower than you would intuitively think. To come up with the answer, you need to calculate the probability that $k$ people all have DIFFERENT birthdays, and then take the compliment (1 minus that number). For example, the probability that 5 people all have different birthdays is $\frac{365}{365} \times \frac{364}{365} \times \frac{363}{365} \times \frac{362}{365} \times \frac{361}{365} = 0.973$ To find out the minimum number of people in a room for the probability to exceed 0.5, you need to find out when the following equation is just over 0.50:
+
+$$
+1 - \prod_{i=1}^{k} \frac{365-(k-1)}{365}
+$$
+
+We can easily calculate the probabilities for each value of k from 1 to 366 as follows:
+
+```{r}
+different_bdays <- data.frame(
+  k = 1:365,
+  prob = sapply(1:365, FUN = function(x) {
+  
+  1 - prod((365 - ((1:x) - 1)) / 365)}
+  
+  ))
+```
+
+Here are the values for each multiple of 10 up until 100 people:
+
+```{r, echo = FALSE}
+knitr::kable(different_bdays[c(1, seq(10, 100, by = 10)),], row.names = FALSE)
+```
+
+
+Here's a plot of all values
+
+```{r}
+library(ggplot2)
+
+ggplot(different_bdays, 
+       aes(x = k, y = prob)) + 
+  geom_point(shape = 1,  col = "gray", size = 2) +
+  geom_line(col = "lightblue", size = 1) +
+  geom_hline(mapping = aes(yintercept = .5), linetype = 2, col = "gray") +
+  geom_segment(mapping = aes(x = 55, y = .4, xend = 23, yend = .5), 
+               arrow = arrow(ends = "last")) +
+  geom_text(mapping = aes(x = 55, y = .4, label = "(23, 0.507)"), nudge_x = 30) + 
+  labs(title = "Birthday Problem",
+       subtitle = "Probability at least two have the same birthday",
+       x = "Number of people in Room",
+       y = "Prob") +
+  theme_minimal()
+
+```
+
+
+3. Imagine you are a physician presented with the following problem. A 50-year old woman Betty, with no symptoms, participants in routine mammogram screening. She tests positive and wants to know how likely it is that she actually has breast cancer given her positive test result. You know that about 1\% of 50-year old women have breast cancer. If a woman *does* have breast cancer, the probability that she tests positive is 90\%. If she *does not* have breast cancer, the probability that she nevertheless tests positive is 9\%. Based on this information, how likely is it that Betty actually has breast cancer given her positive test result?
+
+\vspace{.5cm}
+
+The answer is just 9\%. To get this, we use Bayes Theorem as follows:
+
+$$
+p(Cancer | Positive) = \frac{BR \times HR}{BR \times HR + (1 - BR) \times FAR} =
+\frac{0.01 \times 0.90}{0.01 \times 0.90 + (1 - 0.01) \times 0.09} =
+0.09
+$$
+
+If you got this wrong don't feel bad, even medical doctors routinely get it wrong. [Research by Gerd Gigerenzer and colleagues](http://science.sciencemag.org/content/290/5500/2261) show that the best way to help people get the answer right is to re-phrase the problem in terms of *natural frequencies*. That is, in reference to a set of 1,000 cases. For example, one could rephrase the problem as:
+
+- Out of 1,000 women, 10 (1\%) have breast cancer and 990 do not. Of the 990 who do not have breast cancer, 89 (9\%) will nonetheless receive a (false) positive test result. Of the 10 that do have breast cancer, 9 (90\%) will receive a positive test result.
+
+The statistical information contained in this phrasing is identical to the original phrase. However, it is much easier to calculate the correct answer as 9 / (9 + 98) = 9\%. For more examples and tips on how to communicate and understand risk, check out Gigerenzer's book [Risky Savvy](https://www.amazon.com/Risk-Savvy-Make-Good-Decisions/dp/0143127101)
+
+
+4. What is the definition of a p-value?
+
+\vspace{.5cm}
+
+From Wikipedia: A p-value is the probability for a given statistical model that, when the null hypothesis is true, the statistical summary (such as the sample mean difference between two compared groups) would be the same as or of greater magnitude than the actual observed results.
+
+I find Wikipedia's definition a bit wordy, so here's mine: The probability of obtaining a test statistic as extreme or more extreme than the one obtained, given that the null hypothesis is true.
+
+5. Imagine that I flipped a fair coin 5 times: which of the following two sequences is more likely to occur? A) "H, H, T, H, T", B) "T, T, T, T, T"
+\vspace{.5cm}
+
+They are equally likely. The probability of each is $\frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2}  \times \frac{1}{2} = \frac{1}{16}$. However, most people guess A because the sequence 'looks' more like one you would get from random coin flips. To learn more about how people make intuitive probability judgments, see Tversky & Kahneman's 1974 Science article titled [Judgment under Uncertainty: Heuristics and Biases](http://science.sciencemag.org/content/185/4157/1124).
+
+
+\pagebreak
+
+### History
+
+1. The \___ \___ theorem, one of the most famous in all of statistics, states that, given enough data, the probability distribution of the sample mean will always be Normal, regardless of the probability distribution of the raw data.
+
+\vspace{.5cm}
+
+Answer: Central Limit. I once planned to memorize the proof of the theorem so I could 'casually' show it off at parties. Somehow I never got around to it.
+
+
+2. The mathematician \___ developed the method of least squares in 1809.
+\vspace{.5cm}
+
+Answer: Most people say Carl Friedrich Gauss (1795), but according to Wikipedia, it was first published by Adrien-Marie Legendre.
+
+3. In 1907, Francis Galton submitted a paper to Nature where he found that when 787 people guessed the weight of an ox at a county fair, the median estimate of the group was only off by 10 pounds. This is one of the most famous examples of the \___ \__ \___.
+\vspace{.5cm}
+
+Answer: Wisdom of (the) crowds. Check out James Surowiecki's great book [Wisdom of Crowds](http://www.powells.com/book/wisdom-of-crowds-9780385721707/17-5) to see how groups can be smarter than even their smartest individual members.
+
+4. The .05 significance threshold was introduced by \___ in 1925. 
+\vspace{5cm}
+
+Answer: Ronald Fischer. Though he certainly did not intend for it to become the monstrosity it is today.
+
+5. Python is a programming language created by Guido van Rossum and was first released in 1991. Where did the name for Python come from?
+\vspace{.5cm}
+
+Answer: Monty Python. And rather than posting a Monty Python clip that everyone has likely already seen, here's a great clip from [The Germans episode](https://www.youtube.com/watch?v=yfl6Lu3xQW0) of Fawlty Towers starring John Cleese (one of the most well known members of Monty Python).
+
+
+\pagebreak
+
+### Terminology
+
+1. A machine learning model that is so complex that no one, even at times its programmers, don't know exactly why it works the way it does, is called a \___ \___ model.
+\vspace{.5cm}
+
+Answer: Black Box. While black box algorithms can be incredibly effective, there is increasing pressure to reduce our reliance on them, especially when making decisions that affect people's lives. Read the MIT Technology Review article [The Dark Secret at the Heart of AI](https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/) and watch Cathy O'Neil's Ted Talk titled [Weapons of Math Destruction](https://www.youtube.com/watch?v=_2u_eHHzRto) to find out why.
+
+2. When an algorithm has very high accuracy in fitting a training dataset, but poor accuracy in predicting a new dataset, then the model has ___ the training data.
+\vspace{.5cm}
+
+Answer: Overfit. 
+
+
+3. In order to computationally estimate probability distributions, especially in Bayesian statistics, MCMC methods are often used, which stand for \___ \___ \___ \___ methods.
+\vspace{.5cm}
+
+Answer: Markov Chain Monte Carlo. See [https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) for details on how MCMC chains work.
+
+
+
+4. What does SPSS stand for?
+\vspace{.5cm}
+
+Answer: Statistical Packages for the Social Sciences. I also would have accepted Shitty Piece of Shitty Shit.
+
+
+5. Regression, decision trees, and random forests are known as \___ learning algorithms, while algorithms such as k nearest neighbor and principle component analysis are known as \___ learning algorithms
+
+
+Answer: Supervised, unsupervised. See [https://en.wikipedia.org/wiki/Unsupervised_learning](https://en.wikipedia.org/wiki/Unsupervised_learning) and [https://en.wikipedia.org/wiki/Supervised_learning](https://en.wikipedia.org/wiki/Supervised_learning) for definitions.
+
+
+
+
+
